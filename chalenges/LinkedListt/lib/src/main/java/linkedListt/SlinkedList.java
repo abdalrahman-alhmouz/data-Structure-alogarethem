@@ -1,64 +1,73 @@
 package linkedListt;
 
-public class SlinkedList {
-    sNode head=null ;
-    sNode tail =null ;
+public class SlinkedList  {
+    sNode head =null ,tail=null ;
     int size =0 ;
-    public  void insert(int number){
-
-        if(size==0){
-            sNode temp=new sNode();
-            temp.data =number;
-            head =temp;
-            tail =temp;
-            size ++ ;
+    public void append(int num){
+        if (size==0){
+            sNode temb=new sNode();
+            temb.data=num;
+            head=temb;
+            tail=temb;
+            size++;
         }else{
-            sNode temp=new sNode();
-            temp.data =number;
-            tail.next=temp;
-            tail =temp;
-            size ++ ;
-
+            sNode temb=new sNode();
+            temb.data=num;
+            tail.next=temb ;
+            tail=temb;
+            size++;
 
         }
-
     }
-    public boolean includes(int number){
-        sNode h=head ;
-        while (h!=null){
-            if (h.data==number){
 
-                return true ;
+    public String insertAfter(int val,int newVal){
+        sNode tem=new sNode();
+        sNode h=head;
+        while (h!=null){
+            if (h.data==val){
+                tem.data=newVal;
+                tem.next=h.next;
+                h.next=tem;
+                return printLnkedList();
             }
-            h= h.next ;
-
+            h=h.next;
         }
-
-        return false ;
+        return "Exeption";
     }
-    public String toString(){
-        sNode h=head;
-        String print="";
-        String printNull="Null";
 
+    public String insertBefore(int val,int newVal){
+        sNode tem=new sNode();
+        sNode h=head;
         while (h!=null){
 
-            print +="{"+h.data+"}->";
-            h= h.next ;
+            if (h.data==val) {
+                h.data = newVal;
+                if(h.data==newVal){
+                    tem.data=val;
+                    tem.next=h.next;
+                    h.next=tem;
+                    h=h.next;
+                    return printLnkedList();
 
+                }else {
+                    return "Exeption";
+                }
+            }
+
+
+            h=h.next;
         }
-        System.out.print(print+printNull);
-
-
-        return print+printNull;
+        return "Exeption";
     }
 
-    public void print(){
+    public String printLnkedList(){
+        String print="",linee="head->",x="x";
+        sNode tem=new sNode();
         sNode h=head;
-        while (h !=null){
-            System.out.print(" "+h.data+" ");
-            h= h.next ;
-
+        while (h!=null){
+            print +="["+h.data+"]->";
+            h=h.next;
         }
+        return linee+print+x;
     }
 }
