@@ -3,8 +3,34 @@
  */
 package linkedListt;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
+
+    public static void main(String[] args) {
+        SlinkedList  classUnderTest = new SlinkedList ();
+        SlinkedList  classTow = new SlinkedList ();
+        sNode  dd = new sNode ();
+
+        classTow.append(1);
+        classTow.append(2);
+        classTow.append(3);
+        classTow.append(4);
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
+        classUnderTest.append(8);
+        classUnderTest.append(9);
+//        classTow.printLnkedList(dd);
+//        classUnderTest.printLnkedList(dd);
+//        System.out.println(classUnderTest);
+        classUnderTest.zipLists(classUnderTest, classTow);
+
+
+    }
+
 }
