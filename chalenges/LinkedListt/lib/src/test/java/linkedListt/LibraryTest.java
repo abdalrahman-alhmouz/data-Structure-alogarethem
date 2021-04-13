@@ -11,29 +11,51 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
-    @Test public void search() {
-        SlinkedList s=new SlinkedList();
-        s.insert(5);
-        s.insert(10);
-        s.insert(15);
-        boolean output =s.includes(15);
-        assertEquals(true,output);
-    }
-    @Test public void testString() {
-        SlinkedList s=new SlinkedList();
-        s.insert(5);
-        s.insert(10);
-        s.insert(15);
-        String output=s.toString();
-        assertEquals("{5}->{10}->{15}->Null", output);
+    @Test public void addFirstTest() {
+        SlinkedList  classUnderTest = new SlinkedList ();
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
 
+        assertEquals("head->[5]->[6]->[7]->x",classUnderTest.printLnkedList());
     }
 
-    @Test public void searchHead() {
-        SlinkedList s=new SlinkedList();
-        s.insert(0);
+    @Test public void insertBeforMiddleTest() {
+        SlinkedList  classUnderTest = new SlinkedList();
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
 
-        boolean output =s.includes(0);
-        assertEquals(true,output);
+
+        assertEquals("head->[5]->[8]->[6]->[7]->x",classUnderTest.insertBefore(6,8));
+
+    }
+    @Test public void insertBeforFirstNodeTest() {
+        SlinkedList classUnderTest = new SlinkedList();
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
+
+
+        assertEquals("head->[8]->[5]->[6]->[7]->x",classUnderTest.insertBefore(5,8));
+    }
+
+    @Test public void insertAfterMdlleNodeTest() {
+        SlinkedList classUnderTest = new SlinkedList();
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
+
+
+        assertEquals("head->[5]->[6]->[8]->[7]->x",classUnderTest.insertAfter(6,8));
+    }
+    @Test public void insertAfterLastNodeTest() {
+        SlinkedList classUnderTest = new SlinkedList();
+        classUnderTest.append(5);
+        classUnderTest.append(6);
+        classUnderTest.append(7);
+
+
+        assertEquals("head->[5]->[6]->[7]->[8]->x",classUnderTest.insertAfter(7,8));
     }
 }
