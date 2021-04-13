@@ -2,22 +2,20 @@
 
  # linked List  Array
 <!-- Short summary or background information -->
-we need to write three  method first one store input number in the linkedList ,second method search in the linkedList then input value before the number third method search in the linkedList then input value After the number .
-## Challenge
+ * we need to write a method that accept int number then return  the number in the  position value of the number in  linkedList ,frome last to start  .
 <!-- Description of the challenge -->
-* create node class eith (data and next)
- the crate metod that accept number inside this method check if the size is equal to zero or not then asign value to head and tail .
- 2 - then crate metod (insertBefore())that accept Tow number inside this method check if the number is equal to h or not then if it equalThen enter the number before the value and return method (printLnkedList()) ,
- return Exeption if the input numper dosent exist  .
- 3 -  then crate metod (insertAfter())that accept Tow number inside this method check if the number is equal to h or not then if it equalThen enter the number after the value and return method (printLnkedList()) ,
- return Exeption if the input numper dosent exist  .
+* Create a metod returnValue that accepts a number within this method, check if the linksList is not null and the value is greater than zero.
+     then create another while loop to loop until reached the next head equal to null   ,
+Then check if the valueis larger than the length of the  linkedLIST Then invert another loop to get to this position.
+Finally, return the value of h.
+ .
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
 
 ## Solution
 <!-- Embedded whiteboard image -->
-solution time 4 hour ;
+solution time 2 hour ;:
 
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
