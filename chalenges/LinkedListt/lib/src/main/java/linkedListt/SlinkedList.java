@@ -2,7 +2,7 @@ package linkedListt;
 
 public class SlinkedList  {
     sNode head =null ,tail=null ;
-    int size =0 ;
+    int size =0 ,siz=0 ,i=0;
     // _____________________________________________{{{{code Chaleng 07}}}}
 
     public String returnValue(int val){
@@ -36,6 +36,41 @@ public class SlinkedList  {
         return "Exeption";
     }
     // _____________________________________________{{{{code Chaleng}}}}
+public SlinkedList ziplists(SlinkedList nodeOne,SlinkedList nodeTow){
+    SlinkedList towList =new SlinkedList();
+    sNode curent=nodeOne.head;
+    sNode curentOne=nodeTow.head;
+    while (curent!=null||curentOne!=null){
+        if (curent==null){
+            towList.append(curentOne.data);
+curentOne=curentOne.next;
+        }else if (curentOne==null){
+            towList.append(curent.data);
+            curent=curent.next;
+        }else{
+            towList.append(curent.data);
+            towList.append(curentOne.data);
+            curent=curent.next;
+            curentOne=curentOne.next;
+
+        }
+
+    }
+    return towList;
+
+
+}
+
+    @Override
+    public String toString() {
+        return "SlinkedList{" +
+                "head=" + head.data +
+                ", tail=" + tail.data +
+//                ", size=" + size +
+//                ", siz=" + siz +
+//                ", i=" + i +
+                '}';
+    }
 
     public void append(int num){
         if (size==0){

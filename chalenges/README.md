@@ -1,13 +1,11 @@
- code chaleng
+ code chaleng 08
 
  # linked List  Array
 <!-- Short summary or background information -->
- * we need to write a method that accept int number then return  the number in the  position value of the number in  linkedList ,frome last to start  .
-<!-- Description of the challenge -->
-* Create a metod returnValue that accepts a number within this method, check if the linksList is not null and the value is greater than zero.
-     then create another while loop to loop until reached the next head equal to null   ,
-Then check if the valueis larger than the length of the  linkedLIST Then invert another loop to get to this position.
-Finally, return the value of h.
+ * we need to write a method that accept a tow LinkedList  then  Zip the two linked lists together into one 
+ <!-- Description of the challenge -->
+* Create a method zipList that accepts a  tow LinkedList within this method, check if the linksList (current or currentOne)is not null and another two if statment each one must checked for current if it null or not for each linksList else assign first node in a new linksList by node one and assign secound node in linksList by nodeTow inside while loop (if the nodeOne or node Tow become null then the linksList will fill up with the one wich isnt null)
+Finally, return the new linksList.
  .
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

@@ -80,5 +80,38 @@ public class LibraryTest {
         assertEquals("7",classUnderTest.returnValue(0));
     }
     // _____________________________________________{{{{code Chaleng 07}}}}
+    // _____________________________________________{{{{code Chaleng 08}}}}
+    @Test public void ziplistsTest() {
+        SlinkedList nodeOne =new SlinkedList();
+        SlinkedList nodeTow =new SlinkedList();
+        SlinkedList nod =new SlinkedList();
+        nodeOne.append(1);
+        nodeOne.append(2);
+        nodeOne.append(3);
+        nodeOne.append(4);
+        nodeTow.append(5);
+        nodeTow.append(6);
+        nodeTow.append(7);
+        nodeTow.append(8);
+        System.out.println(nodeOne);
+        System.out.println(nod.ziplists(nodeOne,nodeTow).printLnkedList());
+        assertEquals("head->[1]->[5]->[2]->[6]->[3]->[7]->[4]->[8]->x",nod.ziplists(nodeOne,nodeTow).printLnkedList());
+    }
+    @Test public void ziplistsTestTow() {
+        SlinkedList nodeOne =new SlinkedList();
+        SlinkedList nodeTow =new SlinkedList();
+        SlinkedList nod =new SlinkedList();
+        nodeOne.append(1);
+        nodeOne.append(2);
+        nodeOne.append(3);
+        nodeOne.append(4);
+        nodeTow.append(5);
+        nodeTow.append(6);
+
+        System.out.println(nodeOne);
+        System.out.println(nod.ziplists(nodeOne,nodeTow).printLnkedList());
+        assertEquals("head->[1]->[5]->[2]->[6]->[3]->[4]->x",nod.ziplists(nodeOne,nodeTow).printLnkedList());
+    }
+    // _____________________________________________{{{{code Chaleng 08}}}}
 
 }
