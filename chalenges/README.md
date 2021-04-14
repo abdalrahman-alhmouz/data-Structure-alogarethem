@@ -1,9 +1,13 @@
-# binary Array
+ code chaleng 08
+
+ # linked List  Array
 <!-- Short summary or background information -->
-we need to write (BinarySearch) method that accept int number and array then search by binary to find this number .
-## Challenge
-<!-- Description of the challenge -->
-* create a BinarySearch method that accept array and int number , then declare  number that equal (-1)   ,then write for loop to loop into the first quarter  array then you must write another loop  with  if statments and loop in the seqond quarter array  also Repeat this step for each quarter  of the array ,if the condition is checked then return i , else return (-1)   .*
+ * we need to write a method that accept a tow LinkedList  then  Zip the two linked lists together into one 
+ <!-- Description of the challenge -->
+* Create a method zipList that accepts a  tow LinkedList within this method, check if the linksList (current or currentOne)is not null and another two if statment each one must checked for current if it null or not for each linksList else assign first node in a new linksList by node one and assign secound node in linksList by nodeTow inside while loop (if the nodeOne or node Tow become null then the linksList will fill up with the one wich isnt null)
+Finally, return the new linksList.
+ .
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
