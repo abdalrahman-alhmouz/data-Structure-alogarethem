@@ -112,6 +112,20 @@ public class LibraryTest {
         System.out.println(nod.ziplists(nodeOne,nodeTow).printLnkedList());
         assertEquals("head->[1]->[5]->[2]->[6]->[3]->[4]->x",nod.ziplists(nodeOne,nodeTow).printLnkedList());
     }
+
+    @Test public void reversTest() {
+        SlinkedList nodeOne =new SlinkedList();
+        SlinkedList nodeTow =new SlinkedList();
+        SlinkedList nod =new SlinkedList();
+        nodeOne.append(1);
+        nodeOne.append(2);
+        nodeOne.append(3);
+        nodeOne.append(4);
+        nodeOne.revers();
+        System.out.println(nodeOne);
+        System.out.println(nod.ziplists(nodeOne,nodeTow).printLnkedList());
+        assertEquals("head->[4]->[3]->[2]->[1]->x",nodeOne.printLnkedList());
+    }
     // _____________________________________________{{{{code Chaleng 08}}}}
 
 }
