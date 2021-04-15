@@ -60,17 +60,33 @@ curentOne=curentOne.next;
 
 
 }
+    public void revers(){
+//        SlinkedList towList =new SlinkedList();
+        sNode prev=null,curent=head,next= curent.next;
 
-    @Override
-    public String toString() {
-        return "SlinkedList{" +
-                "head=" + head.data +
-                ", tail=" + tail.data +
-//                ", size=" + size +
-//                ", siz=" + siz +
-//                ", i=" + i +
-                '}';
+        while (next!=null){
+            next=curent.next;
+            curent.next=prev;
+            prev=curent;
+            curent=next;
+
+
+        }
+        head=prev;
+
+
     }
+
+//    @Override
+//    public String toString() {
+//        return "SlinkedList{" +
+//                "head=" + head.data +
+//                ", tail=" + tail.data +
+////                ", size=" + size +
+////                ", siz=" + siz +
+////                ", i=" + i +
+//                '}';
+//    }
 
     public void append(int num){
         if (size==0){
@@ -138,5 +154,16 @@ curentOne=curentOne.next;
             h=h.next;
         }
         return linee+print+x;
+    }
+
+    public void revTow(){
+        sNode prev=null,current=head,next=current.next;
+        while (current!=null){
+            next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
+        }
+        head=prev;
     }
 }

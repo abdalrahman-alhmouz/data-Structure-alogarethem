@@ -2,10 +2,10 @@
 
  # linked List  Array
 <!-- Short summary or background information -->
- * we need to write a method that accept a tow LinkedList  then  Zip the two linked lists together into one 
- <!-- Description of the challenge -->
-* Create a method zipList that accepts a  tow LinkedList within this method, check if the linksList (current or currentOne)is not null and another two if statment each one must checked for current if it null or not for each linksList else assign first node in a new linksList by node one and assign secound node in linksList by nodeTow inside while loop (if the nodeOne or node Tow become null then the linksList will fill up with the one wich isnt null)
-Finally, return the new linksList.
+ * we need to write a Stack ,Queue And fill them in with  data. * <!-- Description of the challenge -->
+ * i have created a class (NODE), (Stack) and (Queue), in the Node class i created a constructor which have (Value, Next).
+In Stack class i, I did (push) the method that accepts the int number and assigns it to the first node etc., the pop method that deletes the last in, and the peek method that returns the last value.
+In the Queue class I used the enQueue method that accepts the int number and assigns it to the first node etc., the deQueue method that deletes the first in, and the peek method that returns the first value.Finally, return the new linksList.
  .
 
 ## Approach & Efficiency
