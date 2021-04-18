@@ -46,7 +46,7 @@ assertFalse("false",stack.isEmpty());
         stack.pop();
         stack.pop();
         stack.pop();
-        assertFalse("true",stack.isEmpty());
+        assertTrue("true",stack.isEmpty());
     }
     @Test public void peekStack() {
         Stack stack=new Stack();
@@ -87,7 +87,7 @@ assertFalse("false",stack.isEmpty());
         queue.enQueue(5);
         queue.enQueue(5);
         queue.enQueue(5);
-        assertTrue("false",queue.isEmbty());
+        assertFalse("false",queue.isEmbty());
 
     }
     @Test public void deQueue() {
