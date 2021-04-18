@@ -2,7 +2,7 @@ package stacksandqueues;
 
 import java.util.EmptyStackException;
 
-public class Stack {
+public class Stack{
    private Node top=null;
     int size =0;
 

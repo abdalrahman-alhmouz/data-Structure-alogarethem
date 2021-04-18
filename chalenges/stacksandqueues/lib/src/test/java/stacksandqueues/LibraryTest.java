@@ -3,9 +3,7 @@
  */
 package stacksandqueues;
 
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.util.EmptyStackException;
 
@@ -46,7 +44,7 @@ assertFalse("false",stack.isEmpty());
         stack.pop();
         stack.pop();
         stack.pop();
-        assertFalse("true",stack.isEmpty());
+        assertTrue("true",stack.isEmpty());
     }
     @Test public void peekStack() {
         Stack stack=new Stack();
@@ -87,7 +85,7 @@ assertFalse("false",stack.isEmpty());
         queue.enQueue(5);
         queue.enQueue(5);
         queue.enQueue(5);
-        assertTrue("false",queue.isEmbty());
+        assertFalse("false",queue.isEmbty());
 
     }
     @Test public void deQueue() {
@@ -139,5 +137,22 @@ assertFalse("false",stack.isEmpty());
         Queue queue=new Queue();
         assertTrue("false", queue.isEmbty());
     }
+//    _______________________________________________{{{codeChaleng11}}}
+    @Test public void puseduTest(){
+        PseudoQueue pseudoQueue=new PseudoQueue();
+
+        pseudoQueue.enqueue(5);
+        pseudoQueue.enqueue(7);
+        pseudoQueue.enqueue(8);
+        pseudoQueue.enqueue(9);
+
+        assertEquals(5,pseudoQueue.dequeue());
+        assertEquals(7,pseudoQueue.dequeue());
+        assertEquals(8,pseudoQueue.dequeue());
+        assertEquals(9,pseudoQueue.dequeue());
+
+    }
+//    _______________________________________________{{{codeChaleng11}}}
 
 }
+

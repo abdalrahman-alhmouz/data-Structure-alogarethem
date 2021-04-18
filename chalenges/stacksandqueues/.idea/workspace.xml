@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7fd9c89-b995-40fc-b0d4-042a7512f634" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedListt/lib/src/main/java/linkedListt/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListt/lib/src/main/java/linkedListt/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedListt/lib/src/main/java/linkedListt/SlinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListt/lib/src/main/java/linkedListt/SlinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedListt/lib/src/test/java/linkedListt/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListt/lib/src/test/java/linkedListt/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/PseudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/stacksandqueues/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/stacksandqueues/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +52,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../quotes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest.instanceQuee">
+  <component name="RunManager" selected="Gradle.LibraryTest.puseduTest">
     <configuration name="LibraryTest.QueueException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,27 +97,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.instance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.instance&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":lib:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="LibraryTest.instanceQuee" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -139,12 +118,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.stackException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.peekQueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.stackException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.peekQueue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LibraryTest.puseduTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.puseduTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LibraryTest.puseduTest" />
         <item itemvalue="Gradle.LibraryTest.instanceQuee" />
-        <item itemvalue="Gradle.LibraryTest.instance" />
-        <item itemvalue="Gradle.LibraryTest.stackException" />
         <item itemvalue="Gradle.LibraryTest.QueueException" />
         <item itemvalue="Gradle.LibraryTest.deQueueMulti" />
+        <item itemvalue="Gradle.LibraryTest.peekQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -191,5 +191,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
