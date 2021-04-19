@@ -2,12 +2,10 @@
 
  # linked List  Array
 <!-- Short summary or background information -->
- * we need to create a brand new PseudoQueue class. without using an existing Queue.new class 
- * At first I created a Stack object in pusedoClass
-Then i created the enqueue method which accepts intg (number) in this method i push the number into (inpox (stack))
-Another method called deququ in this method im push (inbox.pop ()) inside outbox.
-Then outbox.pop returns;
- .
+ * we need to Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+  
+ * At first I created a AnimalSheltar ,cats and dogs class  in AnimalSheltar , i created the enqueue method which accepts onject (animal) in this method i push the Object (cats,dogs);
+Another method called deququ in this method im delete the pref object (fifo);
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
