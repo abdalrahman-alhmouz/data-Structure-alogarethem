@@ -2,11 +2,21 @@
 
  # linked List  Array
 <!-- Short summary or background information -->
- * we need to Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+* we need to Create a class called MultiBracketValidation which have MultiBracketValidation method that check if the bracket closed or not .
   
- * At first I created a AnimalSheltar ,cats and dogs class  in AnimalSheltar , i created the enqueue method which accepts onject (animal) in this method i push the Object (cats,dogs);
-Another method called deququ in this method im delete the pref object (fifo);
-
+ * Initially, I created a MultiBracket method that accepts a String to see if the arcs are balanced;
+The first thing I did was use ArrayDeque <character>
+Then for loop to loop in the String (each char) in the side of the loop for I declare char (x) which is equal to each character in the array, then check if the string contains any opean parentheses and push them to the Stack.
+Then Swith case 
+  With the first case ")"
+Declare char check = stack.pop
+If the check is equal to the other closed bracket type, return false and break the loop;
+With a second letter "}"
+Declare char check = stack.pop
+If the check is equal to the other closed  bracket type, return false and break the loop;
+With the third case "]"
+Declare char check = stack.pop
+If the check is equal to the other closed  bracket type, return false and break the loop;
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
