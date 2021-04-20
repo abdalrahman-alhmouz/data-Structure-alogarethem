@@ -31,6 +31,17 @@ public class LibraryTest {
         assertTrue("true",animal.isEmbty());
 
     }
+    @Test
+    public void multiBracketValidationTest(){
+        MultiBracketValidation bracket=new MultiBracketValidation();
+        assertTrue("true",bracket.multiBracket("{hello}"));
+        assertTrue("true",bracket.multiBracket("{hello}[there](test)"));
+        assertTrue("true",bracket.multiBracket("[({hello})]"));
+        assertFalse("false",bracket.multiBracket("]"));
+        assertFalse("false",bracket.multiBracket("{]}"));
+        assertFalse("false",bracket.multiBracket("{()]"));
+        assertFalse("false",bracket.multiBracket("{{{}{}}"));
+    }
 
 
 }
