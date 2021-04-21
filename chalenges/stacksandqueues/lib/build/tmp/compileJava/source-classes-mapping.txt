@@ -1,10 +1,15 @@
 stacksandqueues/Node.java
  stacksandqueues.Node
+<<<<<<< HEAD
 stacksandqueues/Queue.java
  stacksandqueues.Queue
 stacksandqueues/PseudoQueue.java
  stacksandqueues.PseudoQueue
+=======
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
 stacksandqueues/Stack.java
  stacksandqueues.Stack
+stacksandqueues/Queue.java
+ stacksandqueues.Queue
 stacksandqueues/Library.java
  stacksandqueues.Library

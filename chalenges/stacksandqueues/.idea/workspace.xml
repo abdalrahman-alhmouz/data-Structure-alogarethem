@@ -5,6 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7fd9c89-b995-40fc-b0d4-042a7512f634" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/PseudoQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/PseudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/stacksandqueues/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/stacksandqueues/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/AnimalShelter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Dogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Queue.java" afterDir="false" />
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
@@ -52,7 +65,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../songr" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Library">
+=======
+  <component name="RunManager" selected="Gradle.LibraryTest.enTest">
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stacksandqueues.Library" />
       <module name="stacksandqueues.lib.main" />
@@ -65,6 +82,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+<<<<<<< HEAD
     </configuration>
     <configuration name="LibraryTest.QueueException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -86,13 +104,15 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+=======
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
     </configuration>
-    <configuration name="LibraryTest.deQueueMulti" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.enTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.deQueueMulti&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.enTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -129,6 +149,30 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="LibraryTest.pusedoTesto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stacksandqueues.LibraryTest.pusedoTesto&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
     <configuration name="LibraryTest.puseduTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -152,11 +196,20 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.Library" />
+=======
+        <item itemvalue="Gradle.LibraryTest.enTest" />
+        <item itemvalue="Gradle.LibraryTest.pusedoTesto" />
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
         <item itemvalue="Gradle.LibraryTest.puseduTest" />
+        <item itemvalue="Application.Library" />
         <item itemvalue="Gradle.LibraryTest.instanceQuee" />
+<<<<<<< HEAD
         <item itemvalue="Gradle.LibraryTest.QueueException" />
         <item itemvalue="Gradle.LibraryTest.deQueueMulti" />
+=======
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
       </list>
     </recent_temporary>
   </component>

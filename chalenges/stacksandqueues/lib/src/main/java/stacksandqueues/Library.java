@@ -20,12 +20,18 @@ public class Library {
         pseudoQueue.enqueue(7);
         pseudoQueue.enqueue(8);
         pseudoQueue.enqueue(9);
+<<<<<<< HEAD
         pseudoQueue.dequeue();
 //        System.out.println(pseudoQueue.deQueue());
 //            pseudoQueue.dequeue(pseudoQueue.);
         System.out.println(pseudoQueue.dequeue());
         String[] array={"D","f","o","q","m"};
         System.out.println(queue.DuckDuckGoose(array,2));
+=======
+//        pseudoQueue.dequeue();
+
+        System.out.println(pseudoQueue);
+>>>>>>> 799dea0c81e04f7e2eed650e4e21d477eceb2434
 
 
 

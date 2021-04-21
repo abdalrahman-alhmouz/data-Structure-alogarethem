@@ -2,12 +2,13 @@ package stacksandqueues;
 
 public class PseudoQueue {
     private Node top=null;
-    int size =0;
-    public Stack inbox = new Stack();
-    public Stack outbox = new Stack();
+  private   int size =0;
+     Stack inbox = new Stack();
+     Stack outbox = new Stack();
 
     public Stack enqueue(int item) {
         inbox.push(item);
+        size++;
         return inbox;
     }
 
@@ -17,11 +18,16 @@ public class PseudoQueue {
                 outbox.push(inbox.pop());
             }
         }
+        size--;
         return outbox.pop();
     }
 
-//    @Override
-//    public String toString() {
-//        return "PseudoQueue{" +outbox.peek();
-//    }
+    @Override
+    public String toString() {
+        return "PseudoQueue{" +
+                " size=" + size +
+                ", inbox=" + inbox.size +
+                ", outbox=" + outbox.size +
+                '}';
+    }
 }
