@@ -1,5 +1,6 @@
 package stacksandqueues;
 
+import java.util.Arrays;
 import java.util.EmptyStackException;
 
 public class Queue {
@@ -39,11 +40,15 @@ public class Queue {
 
         }
     }
+
+//
     public int peek(){
         if (!isEmbty())
             return front.value;
     else
             throw new EmptyStackException();
     }
+
+
 
 }

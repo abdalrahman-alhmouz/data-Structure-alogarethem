@@ -13,6 +13,7 @@ public class Stack{
     size++;
 
     }
+
     public int pop(){
     if (isEmpty())
         throw new EmptyStackException();

@@ -24,6 +24,8 @@ public class Library {
 //        System.out.println(pseudoQueue.deQueue());
 //            pseudoQueue.dequeue(pseudoQueue.);
         System.out.println(pseudoQueue.dequeue());
+        String[] array={"D","f","o","q","m"};
+        System.out.println(queue.DuckDuckGoose(array,2));
 
 
 
