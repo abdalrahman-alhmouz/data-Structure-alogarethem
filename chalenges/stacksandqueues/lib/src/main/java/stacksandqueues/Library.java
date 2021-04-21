@@ -20,10 +20,9 @@ public class Library {
         pseudoQueue.enqueue(7);
         pseudoQueue.enqueue(8);
         pseudoQueue.enqueue(9);
-        pseudoQueue.dequeue();
-//        System.out.println(pseudoQueue.deQueue());
-//            pseudoQueue.dequeue(pseudoQueue.);
-        System.out.println(pseudoQueue.dequeue());
+//        pseudoQueue.dequeue();
+
+        System.out.println(pseudoQueue);
 
 
 
