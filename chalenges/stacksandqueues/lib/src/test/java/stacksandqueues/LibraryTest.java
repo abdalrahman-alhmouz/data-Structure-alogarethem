@@ -12,9 +12,9 @@ import static org.junit.Assert.*;
 public class LibraryTest {
     @Test public void pushStack() {
         Stack stack=new Stack();
-assertTrue("true",stack.isEmpty());
-    stack.push(5);
-assertFalse("false",stack.isEmpty());
+        assertTrue("true",stack.isEmpty());
+        stack.push(5);
+        assertFalse("false",stack.isEmpty());
     }
     @Test public void pushStackMulti() {
         Stack stack=new Stack();
@@ -105,7 +105,7 @@ assertFalse("false",stack.isEmpty());
         queue.enQueue(6);
         queue.enQueue(7);
         assertEquals(5, queue.peek());
-          }
+    }
     @Test public void deQueueMulti() {
         Queue queue=new Queue();
         queue.enQueue(5);
@@ -128,7 +128,7 @@ assertFalse("false",stack.isEmpty());
         queue.deQueue();
         queue.deQueue();
         queue.deQueue();
-        		assertEquals(EmptyStackException.class,queue.peek());
+        assertEquals(EmptyStackException.class,queue.peek());
 
 
 
