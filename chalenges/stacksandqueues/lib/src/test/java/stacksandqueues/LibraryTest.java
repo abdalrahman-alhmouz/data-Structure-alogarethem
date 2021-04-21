@@ -138,18 +138,43 @@ assertFalse("false",stack.isEmpty());
         assertTrue("false", queue.isEmbty());
     }
 //    _______________________________________________{{{codeChaleng11}}}
-    @Test public void puseduTest(){
+@Test public void puseduTest(){
+    PseudoQueue pseudoQueue=new PseudoQueue();
+
+    pseudoQueue.enqueue(5);
+    pseudoQueue.enqueue(7);
+    pseudoQueue.enqueue(8);
+    pseudoQueue.enqueue(9);
+    System.out.println(pseudoQueue);
+    assertEquals(5,pseudoQueue.dequeue());
+    assertEquals(7,pseudoQueue.dequeue());
+    assertEquals(8,pseudoQueue.dequeue());
+    assertEquals(9,pseudoQueue.dequeue());
+
+}
+
+    @Test public void pusedoTesto(){
         PseudoQueue pseudoQueue=new PseudoQueue();
 
         pseudoQueue.enqueue(5);
         pseudoQueue.enqueue(7);
         pseudoQueue.enqueue(8);
         pseudoQueue.enqueue(9);
+        System.out.println(pseudoQueue.toString());
+        assertEquals("PseudoQueue{ size=4, inbox=4, outbox=0}",pseudoQueue.toString());
 
-        assertEquals(5,pseudoQueue.dequeue());
-        assertEquals(7,pseudoQueue.dequeue());
-        assertEquals(8,pseudoQueue.dequeue());
-        assertEquals(9,pseudoQueue.dequeue());
+    }
+
+    @Test public void enTest(){
+        PseudoQueue pseudoQueue=new PseudoQueue();
+
+        pseudoQueue.enqueue(5);
+        pseudoQueue.enqueue(7);
+        pseudoQueue.enqueue(8);
+        pseudoQueue.enqueue(9);
+        pseudoQueue.dequeue();
+
+        assertEquals("PseudoQueue{ size=3, inbox=0, outbox=3}",pseudoQueue.toString());
 
     }
 //    _______________________________________________{{{codeChaleng11}}}

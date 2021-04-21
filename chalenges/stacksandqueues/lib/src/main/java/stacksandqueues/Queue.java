@@ -46,4 +46,12 @@ public class Queue {
             throw new EmptyStackException();
     }
 
+    @Override
+    public String toString() {
+        return "Queue{" +
+                "rear=" + rear +
+                ", front=" + front +
+                ", size=" + size +
+                '}';
+    }
 }
