@@ -9,11 +9,13 @@ public class Library {
     }
 
     public static void main(String[] args) {
-        AnimalShelter animalShelter=new AnimalShelter();
-        animalShelter.enQueue(animalShelter);
-        animalShelter.enQueue(animalShelter);
-        animalShelter.enQueue(animalShelter);
-        animalShelter.deQueue();
-        System.out.println(animalShelter.peek());
+        AnimalShelter classUnderTest = new AnimalShelter();
+        Cat cat = new Cat("Mew","anything",5);
+        Cat cat1 = new Cat("anything","anything",4);
+        Dogs dog = new Dogs("anything","anything",3);
+        classUnderTest.enQueue(cat);
+        classUnderTest.enQueue(dog);
+        classUnderTest.enQueue(cat1);
+        System.out.println(classUnderTest.dogy.peek());
     }
 }

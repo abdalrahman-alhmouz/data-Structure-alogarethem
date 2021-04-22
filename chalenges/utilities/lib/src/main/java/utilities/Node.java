@@ -2,8 +2,8 @@ package utilities;
 
 public class Node {
     Node next;
-    String value;
-    public Node(String value) {
+    Animal value;
+    public Node(Animal value) {
         this.value = value;
         this.next = next;
     }

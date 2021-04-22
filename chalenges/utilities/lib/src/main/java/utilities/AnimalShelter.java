@@ -3,97 +3,86 @@ package utilities;
 import java.util.EmptyStackException;
 
 public class AnimalShelter {
-
+    private int size=0;
     private Node rear,front;
-    int size =0;
+    Queue catey=new Queue();
+    Queue dogy=new Queue();
+
 
     public boolean isEmbty(){
         return size==0;
     }
 
-    public void enQueue(AnimalShelter num){
-        Cat cat =new Cat();
-        cat.setCats("cats");
-        Dogs dogs =new Dogs();
-        dogs.setDogs("dogs");
-        Node temb=new Node(cat.getCats());
-        Node tembTow=new Node(dogs.getDogs());
-        if (size%2==0){
-            if(front==null){
-                rear=tembTow;
-                front=tembTow;
-                size++;
-            }else {
-                rear.next=tembTow;
-                rear=tembTow;
-                size++;
-            }
-        }else{
-            if(front==null){
-                rear=temb;
-                front=temb;
-                size++;
-            }else {
-                rear.next=temb;
-                rear=temb;
-                size++;
-            }
-        }
+    public void enQueue(Animal animal){
+        try {
+            if(animal instanceof Cat) {
+                catey.enQueue(animal);
+                System.out.println(catey.peek());
 
-
-    }
-      public void deQueue(){
-        Node response=null;
-        if (front!=null){
-            if (front.next!=null){
-                response=new Node(front.value);
-                front=front.next;
-                size--;
-            }else {
-                response=null;
-                front=null;
-                size--;
-            }
-        }else {
-            throw new EmptyStackException();
-
+            }else if(animal instanceof Dogs)
+                dogy.enQueue(animal);
+        }catch (Exception ex){
+            System.out.println(ex);
         }
     }
+    public Object dequeue(String pref){
+        try {
+            if (pref.toLowerCase() == "cat"){
+                if (catey.isEmbty())
+                    return new NullPointerException();
+                return  catey.deQueue();
+            }else if (pref.toLowerCase() == "dog"){
+                if (dogy.isEmbty())
+                    return new NullPointerException();
+                return dogy.deQueue();
+            }
+        }catch (NullPointerException ex){
+            System.out.println(ex);
+        }
+        return null;
+    }
+
+//    @Override
+//    public String toString() {
+//        return "AnimalShelter{" +
+//                " catey=" + catey +
+//                ", dogy=" + dogy +
+//                '}';
+//    }
+
 
     @Override
     public String toString() {
         return "AnimalShelter{" +
-                "rear=" + rear.value +
-                ", front=" + front.value +
-                ", size=" + size +
+                "size=" + size +
+                ", rear=" + rear +
+                ", front=" + front +
+                ", catey=" + catey +
+                ", dogy=" + dogy +
                 '}';
     }
-    public String peek(){
+
+    public Queue getCatey() {
+        return catey;
+    }
+
+    public void setCatey(Queue catey) {
+        this.catey = catey;
+    }
+
+    public Queue getDogy() {
+        return dogy;
+    }
+
+    public void setDogy(Queue dogy) {
+        this.dogy = dogy;
+    }
+
+    public Animal peek(){
         if (!isEmbty())
             return front.value;
         else
             throw new EmptyStackException();
     }
-    //String cats,dogs;
-//
-//    public AnimalShelter(String cats, String dogs) {
-//        this.cats = cats;
-//        this.dogs = dogs;
-//    }
-//
-//    public String getCats() {
-//        return cats;
-//    }
-//
-//    public void setCats(String cats) {
-//        this.cats = cats;
-//    }
-//
-//    public String getDogs() {
-//        return dogs;
-//    }
-//
-//    public void setDogs(String dogs) {
-//        this.dogs = dogs;
-//    }
+
 }

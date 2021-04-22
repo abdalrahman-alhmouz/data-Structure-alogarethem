@@ -7,30 +7,45 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void enQueueTest() {
-        AnimalShelter animal=new AnimalShelter();
-        animal.enQueue(animal);
-        animal.enQueue(animal);
-        animal.enQueue(animal);
-        assertEquals("dogs",animal.peek());
-        animal.deQueue();
-        assertEquals("cats",animal.peek());
-
-
+    @Test public void testAnimalShelterEnqueue() {
+        AnimalShelter classUnderTest = new AnimalShelter();
+        Cat cat = new Cat("dell","black",5);
+        Cat cat1 = new Cat("tom","red",4);
+        Dogs dog = new Dogs("roly","white",2);
+        classUnderTest.enQueue(cat);
+        classUnderTest.enQueue(cat1);
+        assertEquals(5,classUnderTest.catey.peek().getAge());
+        assertEquals("black",classUnderTest.catey.peek().getColor());
+        assertEquals("dell",classUnderTest.catey.peek().getAnimal());
+        classUnderTest.dequeue("cat");
+        assertEquals(4,classUnderTest.catey.peek().getAge());
+        assertEquals("red",classUnderTest.catey.peek().getColor());
+        assertEquals("tom",classUnderTest.catey.peek().getAnimal());
+        classUnderTest.enQueue(dog);
+        assertEquals(2,classUnderTest.dogy.peek().getAge());
+        assertEquals("white",classUnderTest.dogy.peek().getColor());
+        assertEquals("roly",classUnderTest.dogy.peek().getAnimal());
     }
 
-    @Test
-    public void deQueueTest() {
-        AnimalShelter animal=new AnimalShelter();
-        animal.enQueue(animal);
-        animal.enQueue(animal);
-        animal.enQueue(animal);
-        animal.deQueue();
-        animal.deQueue();
-        animal.deQueue();
-        assertTrue("true",animal.isEmbty());
-
+    @Test public void testAnimalShelterDequeueEmptyAnimalShelter() {
+        AnimalShelter classUnderTest = new AnimalShelter();
+        assertEquals("enqueue cat in empty AnimalShelte","java.lang.NullPointerException",classUnderTest.dequeue("cat").toString());
     }
 
+    @Test public void testAnimalShelterDequeueAnimalShelter() {
+        AnimalShelter classUnderTest = new AnimalShelter();
+        Cat cat = new Cat("Mew","anything",5);
+        Cat cat1 = new Cat("anything","anything",4);
+        Dogs dog = new Dogs("anything","anything",3);
+        classUnderTest.enQueue(cat);
+        classUnderTest.enQueue(dog);
+        classUnderTest.enQueue(cat1);
+//        assertEquals("Dog: {name='anything', age=2.5, species='anything', color='anything'",classUnderTest.dequeue("dog").toString());
+//        assertEquals("dequeue cow from AnimalShelte",null,classUnderTest.dequeue("cow"));
+//        assertEquals("AnimalShelter after dequeue dog","Animal Shelter => { cats = Queue{front=Node{value=Cat: {name='Mew', age=2.4, species='anything', color='anything'}, next=Node{value=Cat: {name='anything', age=2.5, species='anything', color='anything'}, next=null}}, Rear=Node{value=Cat: {name='anything', age=2.5, species='anything', color='anything'}, next=null}} , dogs = Queue{front=null, Rear=null} }",classUnderTest.toString());
+//        assertEquals("dequeue cat from AnimalShelte","Cat: {name='Mew', age=2.4, species='anything', color='anything'}",classUnderTest.dequeue("cat").toString());
+//        assertEquals("dequeue another cat from AnimalShelte","Cat: {name='anything', age=2.5, species='anything', color='anything'}",classUnderTest.dequeue("cat").toString());
+//        assertEquals("AnimalShelte after dequeue all cats" ,"Animal Shelter => { cats = Queue{front=null, Rear=null} , dogs = Queue{front=null, Rear=null} }",classUnderTest.toString());
+    }
 
 }

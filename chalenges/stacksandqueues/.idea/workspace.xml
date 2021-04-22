@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7fd9c89-b995-40fc-b0d4-042a7512f634" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/AnimalShelter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Dogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Animal.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/AnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Dogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/lib/src/main/java/utilities/Dogs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../utilities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.puseduTest">
     <configuration name="LibraryTest.QueueException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -198,7 +198,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/lib/src/main/java/stacksandqueues/Library.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
