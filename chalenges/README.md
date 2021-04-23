@@ -1,4 +1,4 @@
- code chaleng 08
+ code chaleng 15
 
  # Tree
 <!-- Short summary or background information -->
@@ -10,7 +10,7 @@ Trees is a type of data structure and we have many types of tree in this code ch
 Challenge
 Approach & Efficiency
 
- ######### Here is description for each method in this code challenge :
+*  Here is description for each method in this code challenge :
 preOrder: to traversal in the tree by following this approach root >> left >> right
 inOrder:to traversal in the tree by following this approach left >> root >> right
 postOrder:to traversal in the tree by following this approach left >> right >> root
