@@ -1,6 +1,6 @@
  code chaleng 08
 
- # linked List  Array
+ # Tree
 <!-- Short summary or background information -->
 * In this challenge what is required is learn how we can traversal in a tree and adding elements.
 
