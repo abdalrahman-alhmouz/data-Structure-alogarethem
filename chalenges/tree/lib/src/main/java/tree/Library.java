@@ -8,4 +8,15 @@ public class Library {
         return true;
     }
 
+    public static void main(String[] args) {
+        Node root=new Node(7,null,null);
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        tree.root = new Node(7);
+        for (int i=0;i<10;i++){
+            Node node=new Node(i,null,null);
+            tree.addTow(node,tree.root);
+        }
+        System.out.println(tree.contain(9,tree.root));
+    }
 }

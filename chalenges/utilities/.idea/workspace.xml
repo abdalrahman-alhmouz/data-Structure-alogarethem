@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de1fe81-556d-491d-8d7b-820f361b0b42" name="Default Changelist" comment="" />
+    <list default="true" id="d8671b53-5347-4fd6-8eaf-392a1e76db43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gradle/6.8.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/6.8.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stacksandqueues" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tree" />
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.multiBracketValidationTest">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -148,7 +166,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7de1fe81-556d-491d-8d7b-820f361b0b42" name="Default Changelist" comment="" />
+      <changelist id="d8671b53-5347-4fd6-8eaf-392a1e76db43" name="Default Changelist" comment="" />
       <created>1618842220109</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

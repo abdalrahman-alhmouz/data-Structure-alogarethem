@@ -2,21 +2,20 @@
 
  # linked List  Array
 <!-- Short summary or background information -->
-* we need to Create a class called MultiBracketValidation which have MultiBracketValidation method that check if the bracket closed or not .
+* In this challenge what is required is learn how we can traversal in a tree and adding elements.
+
   
- * Initially, I created a MultiBracket method that accepts a String to see if the arcs are balanced;
-The first thing I did was use ArrayDeque <character>
-Then for loop to loop in the String (each char) in the side of the loop for I declare char (x) which is equal to each character in the array, then check if the string contains any opean parentheses and push them to the Stack.
-Then Swith case 
-  With the first case ")"
-Declare char check = stack.pop
-If the check is equal to the other closed bracket type, return false and break the loop;
-With a second letter "}"
-Declare char check = stack.pop
-If the check is equal to the other closed  bracket type, return false and break the loop;
-With the third case "]"
-Declare char check = stack.pop
-If the check is equal to the other closed  bracket type, return false and break the loop;
+ * Trees
+Trees is a type of data structure and we have many types of tree in this code challenge we are dealing with binary tree.
+Challenge
+Approach & Efficiency
+
+ ######### Here is description for each method in this code challenge :
+preOrder: to traversal in the tree by following this approach root >> left >> right
+inOrder:to traversal in the tree by following this approach left >> root >> right
+postOrder:to traversal in the tree by following this approach left >> right >> root
+add: this method to add take integer as input and add it in the correct location in the tree
+contain: for checking if the provided value exist in the tree or not.
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
