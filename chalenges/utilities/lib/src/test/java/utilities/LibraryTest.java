@@ -36,16 +36,13 @@ public class LibraryTest {
         AnimalShelter classUnderTest = new AnimalShelter();
         Cat cat = new Cat("Mew","anything",5);
         Cat cat1 = new Cat("anything","anything",4);
-        Dogs dog = new Dogs("anything","anything",3);
+        Dogs dog = new Dogs("loly","black",5);
         classUnderTest.enQueue(cat);
         classUnderTest.enQueue(dog);
         classUnderTest.enQueue(cat1);
-//        assertEquals("Dog: {name='anything', age=2.5, species='anything', color='anything'",classUnderTest.dequeue("dog").toString());
-//        assertEquals("dequeue cow from AnimalShelte",null,classUnderTest.dequeue("cow"));
-//        assertEquals("AnimalShelter after dequeue dog","Animal Shelter => { cats = Queue{front=Node{value=Cat: {name='Mew', age=2.4, species='anything', color='anything'}, next=Node{value=Cat: {name='anything', age=2.5, species='anything', color='anything'}, next=null}}, Rear=Node{value=Cat: {name='anything', age=2.5, species='anything', color='anything'}, next=null}} , dogs = Queue{front=null, Rear=null} }",classUnderTest.toString());
-//        assertEquals("dequeue cat from AnimalShelte","Cat: {name='Mew', age=2.4, species='anything', color='anything'}",classUnderTest.dequeue("cat").toString());
-//        assertEquals("dequeue another cat from AnimalShelte","Cat: {name='anything', age=2.5, species='anything', color='anything'}",classUnderTest.dequeue("cat").toString());
-//        assertEquals("AnimalShelte after dequeue all cats" ,"Animal Shelter => { cats = Queue{front=null, Rear=null} , dogs = Queue{front=null, Rear=null} }",classUnderTest.toString());
+        assertEquals("dequeue cow from AnimalShelte",null,classUnderTest.dequeue("cow"));
+        assertEquals("AnimalShelter{catey=Queue{rear=Cats: {name='anything', age=4, color='anything'}}, dogy=Queue{rear=Dog: {name='loly', age=5, color='black'}}}",classUnderTest.toString());
+        assertEquals("AnimalShelter{catey=Queue{rear=Cats: {name='anything', age=4, color='anything'}}, dogy=Queue{rear=Dog: {name='loly', age=5, color='black'}}}",classUnderTest.toString());
     }
 
 }

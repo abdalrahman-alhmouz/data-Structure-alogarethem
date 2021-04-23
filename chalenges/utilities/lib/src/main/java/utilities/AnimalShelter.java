@@ -54,11 +54,8 @@ public class AnimalShelter {
     @Override
     public String toString() {
         return "AnimalShelter{" +
-                "size=" + size +
-                ", rear=" + rear +
-                ", front=" + front +
-                ", catey=" + catey +
-                ", dogy=" + dogy +
+                "catey=" + catey.toString() +
+                ", dogy=" + dogy.toString() +
                 '}';
     }
 
