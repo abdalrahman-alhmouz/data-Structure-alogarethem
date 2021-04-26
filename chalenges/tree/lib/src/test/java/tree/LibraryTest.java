@@ -22,7 +22,7 @@ public class LibraryTest {
         assertEquals(1, tree.root.left.value);
     }
     @Test public void preOrderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
+        Tree tree = new Tree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -32,7 +32,7 @@ public class LibraryTest {
         assertEquals("null1 2 4 5 3 ", tree.printPreorder());
     }
     @Test public void inorderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
+        Tree tree = new Tree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -41,7 +41,7 @@ public class LibraryTest {
         assertEquals("null4 2 5 1 3 ", tree.printInorder());
     }
     @Test public void postorderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
+        Tree tree = new Tree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -92,5 +92,31 @@ public class LibraryTest {
         assertEquals(0, tree.findMax(root));
     }
 //    __________________________________________{{{{code Chaleng 16}}}}
+//    __________________________________________{{{{code Chaleng 17}}}}
+@Test public void traversTest() {
+    Node root=new Node();
+
+    BinarySearchTree tree = new BinarySearchTree(root);
+    Tree tree1=new Tree();
+    tree.addThre(9,root);
+    tree.addThre(10,root);
+    tree.addThre(5,root);
+    tree.addThre(8,root);
+    tree.addThre(6,root);
+    tree.addThre(4,root);
+
+    assertEquals("9  5  10  4  8  6  ", tree1.traversal(tree.root.rigth));
+}
+    @Test public void traversTestTow() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        Tree tree1=new Tree();
+        tree.addThre(9,root);
+        tree.addThre(10,root);
+        assertEquals("9  10  ", tree1.traversal(tree.root.rigth));
+    }
+
+//    __________________________________________{{{{code Chaleng 17}}}}
 
 }
