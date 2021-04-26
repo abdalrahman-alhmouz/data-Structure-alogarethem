@@ -67,4 +67,30 @@ public class LibraryTest {
         assertEquals(7, tree.root.value);
     }
 
+//    __________________________________________{{{{code Chaleng 16}}}}
+
+    @Test public void findMaxTest() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        tree.addThre(9,root);
+        tree.addThre(10,root);
+        tree.addThre(5,root);
+        assertEquals(10, tree.findMax(root));
+    }
+    @Test public void findMaxTestTow() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        tree.addThre(9,root);
+        assertEquals(9, tree.findMax(root));
+    }
+    @Test public void findMaxTestThree() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        assertEquals(0, tree.findMax(root));
+    }
+//    __________________________________________{{{{code Chaleng 16}}}}
+
 }
