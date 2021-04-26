@@ -2,20 +2,22 @@
 
  # BinaryTree 
 <!-- Short summary or background information -->
-* Write an instance method called find-maximum-value,return maximum value;
+* Write a breadth first traversal method which takes a Binary Tree as its unique input.;
   
  
  ## solve :
-creat  findMax method () with node parameters ;
-- check if its null or not;
-- assign res to root.data;
-- assign left to findMax(root.left);
- - assign right to findMax(root.right);
- - check if left side is larger than root ;
- - assign root to left ;
-- check if right side is larger than root ;
- - assign root to right
- - return root ;
+
+- creat  traversal method () with node parameters ;
+- create linkList Array accept Node;
+- add Node to the array;
+- while array not null {
+ - assign node to array.remove;
+- assign hello String to node .value ;
+- check if left side is not null then ;
+- assign node to array.add(node.left);
+- check if right side is not null then ;
+- assign node to array.add(node.left);
+- return hello ;
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
