@@ -9,14 +9,14 @@ public class Library {
     }
 
     public static void main(String[] args) {
-        Node root=new Node(7,null,null);
+        Node root=new Node();
 
         BinarySearchTree tree = new BinarySearchTree(root);
-        tree.root = new Node(7);
-        for (int i=0;i<10;i++){
-            Node node=new Node(i,null,null);
-            tree.addTow(node,tree.root);
-        }
-        System.out.println(tree.contain(9,tree.root));
+        tree.addThre(9,root);
+        tree.addThre(10,root);
+        tree.addThre(5,root);
+        tree.search(root,5);
+        System.out.println(root.rigth.left.value);
+        System.out.println(tree.findMax(root));
     }
 }

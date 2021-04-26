@@ -65,29 +65,47 @@ public class BinarySearchTree {
      public String printPreorder() {return printPreorder(root);
     }
 
-public void addNode(int value,Node roote){
 
-        if (roote==null){
-            roote=new Node(value);
-            return;
+public void addThre(int val,Node nod){
+        if (nod==null){
+            nod=new Node(val);
         }
-        if (roote.value>value){
-            if (roote.left==null){
-                roote.left=new Node(value);
+        if (val<nod.value){
+            if (nod.left==null){
+                nod.left=new Node(val);
                 return;
             }
-            addNode(value,roote.left);
-
-            if (roote.value<value){
-                if (roote.rigth==null){
-                    roote.rigth=new Node(value);
-                    return;
-                }
-                addNode(value,roote.rigth);
-            }
-
+            addThre(val,nod.left);
         }
+        if (val>nod.value){
+            if (nod.rigth==null){
+                nod.rigth=new Node(val);
+                return;
+            }
+            addThre(val,nod.rigth);
+        }
+
 }
+public void search(Node nod1,int nod2){
+    if (nod1==null){
+        System.out.println("value can not found");
+    }
+    if (nod2==nod1.value){
+        System.out.println("yes");
+        return;
+    }
+    if (nod2>nod1.value){
+        search(nod1.rigth,nod2);
+    }
+    if (nod2<nod1.value){
+        search(nod1.left,nod2);
+    }
+
+
+}
+
+
+
 public void addTow(Node newNode,Node rootExp){
         if (rootExp==null)
             return;
@@ -121,6 +139,24 @@ public boolean contain(int data,Node rootExp){
         contain(data,rootExp.left);
     }
 return bool==true;
+    }
+
+    public int findMax(Node rootExp){
+        if (rootExp==null){
+//        System.out.println("value can not found");
+            return -1;
+        }
+
+        int root = rootExp.value;
+        int lef = findMax(rootExp.left);
+        int righ = findMax(rootExp.rigth);
+
+        if (lef > root)
+            root = lef;
+        if (righ > root)
+            root = righ;
+        return root;
+
     }
 
     @Override
