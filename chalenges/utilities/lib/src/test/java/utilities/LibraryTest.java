@@ -4,6 +4,10 @@
 package utilities;
 
 import org.junit.Test;
+import utilities.FizzBuzzTree.FizzBuzzTree;
+import utilities.FizzBuzzTree.Node;
+import utilities.FizzBuzzTree.Tree;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {
@@ -43,5 +47,62 @@ public class LibraryTest {
         assertFalse("false",bracket.multiBracket("{{{}{}}"));
     }
 
+//    __________________________________________________{{{{code chaleng 18}}}}
 
+    @Test
+    public void fizzbuzzTest(){
+        Tree tr = new Tree();
+        FizzBuzzTree fizzBuzzTree=new FizzBuzzTree();
+        tr.root=new utilities.FizzBuzzTree.Node(5);
+        tr.root.left=new utilities.FizzBuzzTree.Node(15);
+        tr.root.right=new utilities.FizzBuzzTree.Node(4);
+        tr.root.left.left=new Node(9);
+        assertEquals("Buzz - FizzBuzz - Fizz - 4 - ",fizzBuzzTree.fizzBuzz( tr,tr.root));
+
+    }
+    @Test
+    public void fizzbuzzTestTow(){
+        Tree tr = new Tree();
+        FizzBuzzTree fizzBuzzTree=new FizzBuzzTree();
+
+
+        assertEquals("",fizzBuzzTree.fizzBuzz( tr,tr.root));
+
+    }
+    @Test
+    public void fizzbuzzTestThree(){
+        Tree tr = new Tree();
+        FizzBuzzTree fizzBuzzTree=new FizzBuzzTree();
+        tr.root=new utilities.FizzBuzzTree.Node(7);
+        tr.root.left=new utilities.FizzBuzzTree.Node(11);
+        tr.root.right=new utilities.FizzBuzzTree.Node(4);
+        tr.root.left.left=new Node(22);
+        assertEquals("7 - 11 - 22 - 4 - ",fizzBuzzTree.fizzBuzz( tr,tr.root));
+
+    }
+    @Test
+    public void fizzbuzzTestFour(){
+        Tree tr = new Tree();
+        FizzBuzzTree fizzBuzzTree=new FizzBuzzTree();
+        tr.root=new utilities.FizzBuzzTree.Node(6);
+        tr.root.left=new utilities.FizzBuzzTree.Node(9);
+        tr.root.right=new utilities.FizzBuzzTree.Node(12);
+        tr.root.left.left=new Node(15);
+        assertEquals("Fizz - Fizz - FizzBuzz - Fizz - ",fizzBuzzTree.fizzBuzz( tr,tr.root));
+
+    }
+    @Test
+    public void fizzbuzzTestFive(){
+        Tree tr = new Tree();
+        FizzBuzzTree fizzBuzzTree=new FizzBuzzTree();
+        tr.root=new utilities.FizzBuzzTree.Node(5);
+        tr.root.left=new utilities.FizzBuzzTree.Node(10);
+        tr.root.right=new utilities.FizzBuzzTree.Node(15);
+        tr.root.left.left=new Node(20);
+        assertEquals("Buzz - Buzz - Buzz - FizzBuzz - ",fizzBuzzTree.fizzBuzz( tr,tr.root));
+
+    }
+
+
+//    __________________________________________________{{{{code chaleng 18}}}}
 }

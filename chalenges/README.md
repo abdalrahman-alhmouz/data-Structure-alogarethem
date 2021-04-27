@@ -2,22 +2,24 @@
 
  # BinaryTree 
 <!-- Short summary or background information -->
-* Write a breadth first traversal method which takes a Binary Tree as its unique input.;
+* Write a function called FizzBuzzTree which takes a k-ary tree then determine whether or not the value of each node is divisible by 3, 5 or both ;
   
  
  ## solve :
 
-- creat  traversal method () with node parameters ;
-- create linkList Array accept Node;
-- add Node to the array;
-- while array not null {
- - assign node to array.remove;
-- assign hello String to node .value ;
-- check if left side is not null then ;
-- assign node to array.add(node.left);
-- check if right side is not null then ;
-- assign node to array.add(node.left);
-- return hello ;
+- creat  fizzBuzz method () with Tree & object parameters ;
+Declare current value as root
+ #### if node  not null check :
+ * if current data is equal to mod 15;
+change current data to "fizzBuzz"
+
+* else if current data is equal to mod 5;
+change current data to "Buzz"
+
+ * else if current data is equal to mod 3;
+change current data to "fizz"
+ * else change current data to "String"
+return Tree ;
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working

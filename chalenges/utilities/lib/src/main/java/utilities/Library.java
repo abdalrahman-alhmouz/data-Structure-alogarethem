@@ -3,13 +3,15 @@
  */
 package utilities;
 
+import utilities.FizzBuzzTree.FizzBuzzTree;
+import utilities.FizzBuzzTree.Node;
+import utilities.FizzBuzzTree.Tree;
+
 public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
-
     public static void main(String[] args) {
-        AnimalShelter animalShelter=new AnimalShelter();
 
     }
 }
