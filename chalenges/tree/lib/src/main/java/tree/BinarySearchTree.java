@@ -12,81 +12,34 @@ public class BinarySearchTree {
         this.root=root;
     }
 
-    public String printPostorder(Node node){
 
-        if (node==null){
-            return "null";
-        }
-
-         printPostorder(node.left);
-
-         printPostorder(node.rigth);
-        hello+=node.value + " ";
-        return hello;
-    }
-
-    public String printInorder(Node node)
-    {
-        if (node == null){
-            return "null";
-
-        }
-
-        /* first recur on left child */
-        printInorder(node.left);
-
-        /* then print the data of node */
-        hello+=node.value + " ";
-
-        /* now recur on right child */
-        printInorder(node.rigth);
-        return hello;
-    }
-
-    public String printPreorder(Node node){
-        if (node == null){
-            return null+"";
-
-        }
-        /* first print data of node */
-        hello+=node.value + " ";
-
-        /* then recur on left sutree */
-        printPreorder(node.left);
-
-        /* now recur on right subtree */
-        printPreorder(node.rigth);
-        return hello;
-
-    }
-
-    public String printPostorder() {return printPostorder(root); }
-    public String printInorder() { return printInorder(root); }
-     public String printPreorder() {return printPreorder(root);
-    }
 
 public void addNode(int value,Node roote){
 
         if (roote==null){
             roote=new Node(value);
+            System.out.println("1");
             return;
         }
         if (roote.value>value){
             if (roote.left==null){
                 roote.left=new Node(value);
+                System.out.println("done");
                 return;
             }
             addNode(value,roote.left);
+        }
 
             if (roote.value<value){
                 if (roote.rigth==null){
                     roote.rigth=new Node(value);
+                    System.out.println("done2");
+
                     return;
                 }
                 addNode(value,roote.rigth);
             }
 
-        }
 }
 public void addTow(Node newNode,Node rootExp){
         if (rootExp==null)
@@ -97,6 +50,7 @@ public void addTow(Node newNode,Node rootExp){
         else
             addTow(newNode,rootExp.rigth);
         }
+
     if (newNode.value<rootExp.value){
         if (rootExp.left==null)
             rootExp.left=newNode;
