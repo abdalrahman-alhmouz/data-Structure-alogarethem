@@ -8,64 +8,6 @@ import static org.junit.Assert.*;
 
 public class LibraryTest {
 
-    @Test public void addTest() {
-        Node root=new Node(7,null,null);
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        tree.root = new Node(7);
-
-        Node node=new Node(1,null,null);
-        tree.addTow(node,tree.root);
-        Node nodeTow=new Node(9,null,null);
-        tree.addTow(nodeTow,tree.root);
-        assertEquals(9, tree.root.rigth.value);
-        assertEquals(1, tree.root.left.value);
-    }
-    @Test public void preOrderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.rigth = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.rigth = new Node(5);
-//        System.out.println(tree.printPreorder());
-        assertEquals("null1 2 4 5 3 ", tree.printPreorder());
-    }
-    @Test public void inorderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.rigth = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.rigth = new Node(5);
-        assertEquals("null4 2 5 1 3 ", tree.printInorder());
-    }
-    @Test public void postorderTest() {
-        BinarySearchTree tree = new BinarySearchTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.rigth = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.rigth = new Node(5);
-        assertEquals("null4 5 2 3 1 ", tree.printPostorder());
-    }
-
-    @Test public void instantiateTest() {
-        Node root=new Node();
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        tree.root = new Node();
-        System.out.println(tree);
-        assertTrue(tree.root.value==0);
-    }
-    @Test public void instantiateOneNode() {
-        Node root=new Node(7,null,null);
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        tree.root = new Node(7);
-
-        assertEquals(7, tree.root.value);
-    }
 
 //    __________________________________________{{{{code Chaleng 16}}}}
 
@@ -73,23 +15,44 @@ public class LibraryTest {
         Node root=new Node();
 
         BinarySearchTree tree = new BinarySearchTree(root);
+        BinaryTree treeTow = new BinaryTree();
         tree.addThre(9,root);
         tree.addThre(10,root);
         tree.addThre(5,root);
-        assertEquals(10, tree.findMax(root));
+        assertEquals(10, treeTow.findMax(root));
     }
     @Test public void findMaxTestTow() {
         Node root=new Node();
 
         BinarySearchTree tree = new BinarySearchTree(root);
+        BinaryTree treeTow = new BinaryTree();
+
         tree.addThre(9,root);
-        assertEquals(9, tree.findMax(root));
+        assertEquals(9, treeTow.findMax(root));
     }
+
     @Test public void findMaxTestThree() {
         Node root=new Node();
 
         BinarySearchTree tree = new BinarySearchTree(root);
-        assertEquals(0, tree.findMax(root));
+        BinaryTree treeTow = new BinaryTree();
+
+        assertEquals(0, treeTow.findMax(root));
+    }
+
+    @Test public void findMaxTestt() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        BinaryTree treeTow = new BinaryTree();
+        tree.addThre(9,root);
+        tree.addThre(10,root);
+        tree.addThre(5,root);
+        tree.addThre(90,root);
+        tree.addThre(78,root);
+        tree.addThre(69,root);
+        tree.addThre(24,root);
+        assertEquals(90, treeTow.findMax(root));
     }
 //    __________________________________________{{{{code Chaleng 16}}}}
 

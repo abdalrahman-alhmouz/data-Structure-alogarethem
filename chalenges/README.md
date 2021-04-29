@@ -22,8 +22,8 @@ creat  findMax method () with node parameters ;
 
 ## Solution
 <!-- Embedded whiteboard image -->
-solution time 1 hour ;
-
+[solution](https://drive.google.com/file/d/1VSSTi4SpUz0Nvg96uHodqC94AHCUw1px/view?usp=sharing)
+![solution](https://raw.githubusercontent.com/abdalrahman-alhmouz/data-Structure-alogarethem/find-maximum-binary-tree/assets/code%20chaleng16.PNG)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 

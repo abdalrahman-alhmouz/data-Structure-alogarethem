@@ -17,6 +17,5 @@ public class Library {
         tree.addThre(5,root);
         tree.search(root,5);
         System.out.println(root.rigth.left.value);
-        System.out.println(tree.findMax(root));
     }
 }
