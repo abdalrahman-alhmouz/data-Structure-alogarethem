@@ -26,8 +26,7 @@ return Tree ;
 
 ## Solution
 <!-- Embedded whiteboard image -->
-solution time 1 hour ;
-
+![whtie board](https://raw.githubusercontent.com/abdalrahman-alhmouz/data-Structure-alogarethem/fizzbuzz-tree/assets/codeChaleng18.PNG)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 
