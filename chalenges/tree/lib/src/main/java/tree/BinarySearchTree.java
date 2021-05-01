@@ -89,23 +89,6 @@ public boolean contain(int data,Node rootExp){
 return bool==true;
     }
 
-    public int findMax(Node rootExp){
-        if (rootExp==null){
-//        System.out.println("value can not found");
-            return -1;
-        }
-
-        int root = rootExp.value;
-        int lef = findMax(rootExp.left);
-        int righ = findMax(rootExp.rigth);
-
-        if (lef > root)
-            root = lef;
-        if (righ > root)
-            root = righ;
-        return root;
-
-    }
 
     @Override
     public String toString() {
