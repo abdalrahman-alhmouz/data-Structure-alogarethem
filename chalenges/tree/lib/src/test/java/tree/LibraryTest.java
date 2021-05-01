@@ -22,7 +22,7 @@ public class LibraryTest {
         assertEquals(1, tree.root.left.value);
     }
     @Test public void preOrderTest() {
-        Tree tree = new Tree();
+        BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -32,7 +32,7 @@ public class LibraryTest {
         assertEquals("null1 2 4 5 3 ", tree.printPreorder());
     }
     @Test public void inorderTest() {
-        Tree tree = new Tree();
+        BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -41,7 +41,7 @@ public class LibraryTest {
         assertEquals("null4 2 5 1 3 ", tree.printInorder());
     }
     @Test public void postorderTest() {
-        Tree tree = new Tree();
+        BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.rigth = new Node(3);
@@ -67,37 +67,13 @@ public class LibraryTest {
         assertEquals(7, tree.root.value);
     }
 
-//    __________________________________________{{{{code Chaleng 16}}}}
 
-    @Test public void findMaxTest() {
-        Node root=new Node();
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        tree.addThre(9,root);
-        tree.addThre(10,root);
-        tree.addThre(5,root);
-        assertEquals(10, tree.findMax(root));
-    }
-    @Test public void findMaxTestTow() {
-        Node root=new Node();
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        tree.addThre(9,root);
-        assertEquals(9, tree.findMax(root));
-    }
-    @Test public void findMaxTestThree() {
-        Node root=new Node();
-
-        BinarySearchTree tree = new BinarySearchTree(root);
-        assertEquals(0, tree.findMax(root));
-    }
-//    __________________________________________{{{{code Chaleng 16}}}}
 //    __________________________________________{{{{code Chaleng 17}}}}
 @Test public void traversTest() {
     Node root=new Node();
 
     BinarySearchTree tree = new BinarySearchTree(root);
-    Tree tree1=new Tree();
+    BinaryTree tree1=new BinaryTree();
     tree.addThre(9,root);
     tree.addThre(10,root);
     tree.addThre(5,root);
@@ -105,16 +81,38 @@ public class LibraryTest {
     tree.addThre(6,root);
     tree.addThre(4,root);
 
-    assertEquals("9  5  10  4  8  6  ", tree1.traversal(tree.root.rigth));
+    assertEquals("[9, 5, 10, 4, 8, 6]", tree1.traversal(tree.root.rigth).toString());
+
+
 }
     @Test public void traversTestTow() {
         Node root=new Node();
 
         BinarySearchTree tree = new BinarySearchTree(root);
-        Tree tree1=new Tree();
+        BinaryTree tree1=new BinaryTree();
         tree.addThre(9,root);
         tree.addThre(10,root);
-        assertEquals("9  10  ", tree1.traversal(tree.root.rigth));
+        tree.addThre(8,root);
+        assertEquals("[9, 8, 10]", tree1.traversal(tree.root.rigth).toString());
+    }
+
+    @Test public void testo() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        BinaryTree tree1=new BinaryTree();
+        tree.addThre(9,root);
+
+        assertEquals("[9]", tree1.traversal(tree.root.rigth).toString());
+    }
+
+    @Test public void traversTestEmbty() {
+        Node root=new Node();
+
+        BinarySearchTree tree = new BinarySearchTree(root);
+        BinaryTree tree1=new BinaryTree();
+
+        assertEquals("[0]", tree1.traversal(tree.root).toString());
     }
 
 //    __________________________________________{{{{code Chaleng 17}}}}

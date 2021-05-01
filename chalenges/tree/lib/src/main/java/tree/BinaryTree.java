@@ -1,13 +1,16 @@
 package tree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Tree {
+public class BinaryTree {
 
     Node root;
     boolean bool=false;
     String hello="" ;
+    ArrayList<Integer> array=new ArrayList<>() ;
+
     public String printPostorder(Node node){
 
         if (node==null){
@@ -63,20 +66,44 @@ public class Tree {
     public String printPreorder() {return printPreorder(root);
     }
 
-    public  String traversal(Node node){
+
+    public int findMax(Node rootExp){
+        if (rootExp==null){
+//        System.out.println("value can not found");
+            return -1;
+        }
+
+        int root = rootExp.value;
+        int lef = findMax(rootExp.left);
+        int righ = findMax(rootExp.rigth);
+
+        if (lef > root)
+            root = lef;
+        if (righ > root)
+            root = righ;
+        return root;
+
+    }
+
+    public  ArrayList<Integer> traversal(Node node){
         Queue<Node> q =new LinkedList<Node>();
         q.add(node);
+
         while (!q.isEmpty()){
             node=q.remove();
             hello+=node.value+"  ";
+            array.add(node.value);
             if(node.left!=null){
                 q.add(node.left);
+
                 if (node.rigth!=null){
                     q.add(node.rigth);
+
                 }
             }
         }
-        return hello;
+
+        return array;
     }
 
 }
