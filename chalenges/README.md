@@ -24,8 +24,7 @@
 
 ## Solution
 <!-- Embedded whiteboard image -->
-solution time 1 hour ;
-
+![white board](https://raw.githubusercontent.com/abdalrahman-alhmouz/data-Structure-alogarethem/breadth-first/assets/code%20chaleng17.PNG)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 
