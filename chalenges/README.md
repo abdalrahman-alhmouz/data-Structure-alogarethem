@@ -1,32 +1,26 @@
- code chaleng 16
+ code chaleng 26
 
- # BinaryTree 
+ # Selection Sort
+ 
 <!-- Short summary or background information -->
-* Write a function called FizzBuzzTree which takes a k-ary tree then determine whether or not the value of each node is divisible by 3, 5 or both ;
+* Write a function called SelectionSort which takes a array then Sort this array  ;
   
  
  ## solve :
 
-- creat  fizzBuzz method () with Tree & object parameters ;
-Declare current value as root
- #### if node  not null check :
- * if current data is equal to mod 15;
-change current data to "fizzBuzz"
-
-* else if current data is equal to mod 5;
-change current data to "Buzz"
-
- * else if current data is equal to mod 3;
-change current data to "fizz"
- * else change current data to "String"
-return Tree ;
+- creat  SelectionSort method () with array parameters ;
+we evaluate if there is a smaller number in the array than what is currently present in index 0 ,
+by tow for loop 
+* . At the end of the evaluation, the smaller number will be swapped with the current value in index i. This results in our smallest number of our array being placed first.
+* And so it is with the rest of the elements of the Array .
+* 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![whtie board](https://raw.githubusercontent.com/abdalrahman-alhmouz/data-Structure-alogarethem/fizzbuzz-tree/assets/codeChaleng18.PNG)
+![whtie board](https://github.com/abdalrahman-alhmouz/data-Structure-alogarethem/blob/code-26/assets/article%2026.PNG?raw=true)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 
