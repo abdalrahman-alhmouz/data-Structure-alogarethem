@@ -20,7 +20,7 @@ by tow for loop
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![whtie board]()
+![whtie board](https://github.com/abdalrahman-alhmouz/data-Structure-alogarethem/blob/code-26/assets/article%2026.PNG?raw=true)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 
