@@ -26,5 +26,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
+<<<<<< code-27
     mainClass = 'Merge Sort.App'
+
 }
