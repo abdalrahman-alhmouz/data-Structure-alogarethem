@@ -15,5 +15,5 @@
 
  * efficiency
  Time :BigO (n)
- space :BigO(nlogn)
+ * space :BigO(nlogn)
 
