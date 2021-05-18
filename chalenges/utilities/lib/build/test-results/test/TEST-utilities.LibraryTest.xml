@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="utilities.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T14:53:36" hostname="DESKTOP-FCF8OFN" time="0.017">
-  <properties/>
-  <testcase name="fizzbuzzTestFive" classname="utilities.LibraryTest" time="0.017"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

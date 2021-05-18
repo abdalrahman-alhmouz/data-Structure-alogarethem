@@ -1,2 +1,0 @@
-arrayBinary/LibraryTest.java
- arrayBinary.LibraryTest
