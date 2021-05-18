@@ -8,27 +8,31 @@ import java.util.*;
 public class App {
 
     public static void main(String[] args) {
-    int array[]={1,8,9,4,2,7};
-//        System.out.println(.toString());
-        Mergesort(array);
-}
-    public static int[] Mergesort(int[] array){
+
+        int[] arr= {45,12,9,20,1,98};
+            System.out.println(Arrays.toString(mergesort(arr)));
+            }
+
+
+
+
+    public static int[] mergesort(int[] array){
         int n =array.length;
         if(n>1){
             int mid=n/2;
             int[] left=new int[mid];
             int[] right=new int[n-mid];
 
-            for(int i=0;i<mid;i++){
-                left[i]=array[i];
+           for(int i = 0; i < left.length; i++) {
+                left[i] = array[i];
             }
-//            for(int j=mid;j<n;j++){
-//                right[j]=array[j];
-//            }
+            for(int j = 0; j < right.length; j++) {
+                right[j] = array[j + mid];
+            }
 
-            System.out.println(Arrays.toString(left));
-            Mergesort(left);
-            Mergesort(right);
+//            System.out.println(Arrays.toString(left));
+            mergesort(left);
+            mergesort(right);
 
             merge(left,right,array);
         }
@@ -48,16 +52,17 @@ public class App {
                 j = j + 1;
             }
             k = k + 1;
-            System.out.println(Arrays.toString(arr));
-
         }
 
-
-                 if (i == left.length){
-            //    set remaining entries in arr to remaining values in right
-                 }else{
-            //    set remaining entries in arr to remaining values in left
-                 }
+             if(i == left.length) {
+            for(int l = j; l < right.length; l++) {
+                arr[k] = right[l];
+            }
+        } else {
+            for(int m = i; m < left.length; m++) {
+                arr[k] = left[m];
+            }
+        }
 
 
     };
