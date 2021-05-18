@@ -11,7 +11,7 @@
 
  ![mege]()
  ![mege]()
- ![mege]()
+ ![merge]()
 
  * efficiency
  Time :BigO (n)
