@@ -52,7 +52,7 @@ ALGORITHM Swap(arr, i, low)
 
  The process continues on the right side with pivot being 23. 16 swaps left and 42 swaps right. Next round 16 and 42 resolves. 
  
-  ![Iteration](assets)
+  ![Iteration](assets/quickSort.png)
  
    
  ### Efficency
