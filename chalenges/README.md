@@ -20,7 +20,7 @@ Declare some variables (key, j)
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![whtie board](https://github.com/abdalrahman-alhmouz/data-Structure-alogarethem/blob/code-26/assets/article%2026.PNG?raw=true)
+![whtie board](https://raw.githubusercontent.com/abdalrahman-alhmouz/data-Structure-alogarethem/code-26/assets/insertionSort.PNG)
 
 Here you will find codeChaleng that I have done  to share what I learned with you ! 💙
 
