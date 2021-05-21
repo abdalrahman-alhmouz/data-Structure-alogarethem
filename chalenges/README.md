@@ -1,19 +1,19 @@
  code chaleng 26
 
- # Selection Sort
+ # Insertion Sort 
  
 <!-- Short summary or background information -->
-* Write a function called SelectionSort which takes a array then Sort this array  ;
+* Write a function called InsertionSort which takes a array then Sort this array  ;
   
  
  ## solve :
-
-- creat  SelectionSort method () with array parameters ;
-we evaluate if there is a smaller number in the array than what is currently present in index 0 ,
-by tow for loop 
-* . At the end of the evaluation, the smaller number will be swapped with the current value in index i. This results in our smallest number of our array being placed first.
-* And so it is with the rest of the elements of the Array .
-* 
+- Create InsertionSort () method with array parameters;
+Declare some variables (key, j)
+   * Create a for loop  to loop in the array 
+ 
+* Check if the first number is greater than the next number
+* sheft the array to get the smallest number in the first index .
+ 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  * self working

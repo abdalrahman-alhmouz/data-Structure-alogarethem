@@ -15,23 +15,39 @@ public class App {
             System.out.println(Arrays.toString(InsertionSort(array)));
 
         }
+        public static int[]  InsertionSort(int[] array){
+        int n=array.length;
+        int key,j ;
 
-        public  static int[] InsertionSort(int[] arr){
-            int n= arr.length,temp=0;
-            int array[]=new int[arr.length];
-            for(int i=0;i<n-1;i++){
-                int min=i;
-                for(int j=i+1;j<n;j++){
-                    if(arr[j]<=arr[min]){
-                        min=j;
-                        temp=arr[min];
-                        arr[min]=arr[i];
-                        arr[i]=temp;
-                        array[i]=temp;
-                        min=i;
-                  }}}
-             return arr ;
+        for (int i=1;i<n;i++){
+            key=array[i];
+            j=i-1;
+            while (j>=0 && array[j]>key){
+                array[j+1]=array[j];
+                j=j-1 ;
+            }
+            array[j+1]=key ;
+
+            }
+                         return array ;
+
         }
+//        public  static int[] InsertionSort(int[] arr){
+//            int n= arr.length,temp=0;
+//            int array[]=new int[arr.length];
+//            for(int i=0;i<n-1;i++){
+//                int min=i;
+//                for(int j=i+1;j<n;j++){
+//                    if(arr[j]<=arr[min]){
+//                        min=j;
+//                        temp=arr[min];
+//                        arr[min]=arr[i];
+//                        arr[i]=temp;
+//                        array[i]=temp;
+//                        min=i;
+//                  }}}
+//             return arr ;
+//        }
 
 
 }
