@@ -44,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Spring/gs-serving-web-content/initial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hashtable" />
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.kInMiddle">
     <configuration name="LibraryTest.kGreater" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">

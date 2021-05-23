@@ -10,5 +10,15 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        Hassssssh nnn =new Hassssssh();
+        nnn.Sizee(70);
+        nnn.added(10,20);
+        nnn.added(2,20);
+        nnn.added(1,20);
+        nnn.added(90,20);
+        nnn.added(150,20);
+
+        System.out.println(nnn.contain(20));
     }
 }
