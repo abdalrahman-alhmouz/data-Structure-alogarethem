@@ -18,4 +18,4 @@ separate the words at the spaces. Used a Hashset to loop through the strings and
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Repeated-Word](assets/repeated-Word.PNG)
+![Repeated-Word](../assets/repeated-Word.PNG)
