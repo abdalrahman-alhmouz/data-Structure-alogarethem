@@ -26,8 +26,9 @@ public class App {
 
             HashSet<String> repeatedWords = new HashSet<>();
             for (String str : strArray) {
+                System.out.println(repeatedWords);
                 if (!repeatedWords.add(str))
-                    return str;
+                return str;
             }
 
         }
