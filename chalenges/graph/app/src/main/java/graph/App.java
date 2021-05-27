@@ -10,15 +10,42 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        int[] array={1,0,2,2,1,0,0,2,1,2};
-        sortArray(array);
+        // Object of graph is created.
+        Graph<Integer> g = new Graph<Integer>();
+
+        // edges are added.
+        // Since the graph is bidirectional,
+        // so boolean bidirectional is passed as true.
+        g.addEdge(0, 1, true);
+        g.addEdge(0, 4, true);
+        g.addEdge(1, 2, true);
+        g.addEdge(1, 3, true);
+        g.addEdge(1, 4, true);
+        g.addEdge(2, 3, true);
+        g.addEdge(3, 4, true);
+
+        // print the graph.
+        System.out.println("Graph:\n"
+                + g.toString());
+
+        // gives the no of vertices in the graph.
+        g.getVertexCount();
+
+        // gives the no of edges in the graph.
+        g.getEdgesCount(true);
+
+        // tells whether the edge is present or not.
+        g.hasEdge(3, 4);
+
+        // tells whether vertex is present or not
+        g.hasVertex(5);
     }
+
 
     public static void sortArray(int[] arr){
         int num=0;
         for(int i=0;i<arr.length;i++){
-            for(int j=1;j<arr.length-1;i++){
+            for(int j=1+i;j<arr.length-1;j++){
                 if(arr[i]>arr[j]){
                     num=arr[i];
                     arr[i]=arr[j];

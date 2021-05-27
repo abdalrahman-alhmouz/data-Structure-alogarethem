@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94847-9c88-4972-89e1-be7f580521ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../graph/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="61f94847-9c88-4972-89e1-be7f580521ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graph" />
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.kInMiddle">
     <configuration name="LibraryTest.kGreater" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
