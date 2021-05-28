@@ -24,6 +24,6 @@ public class AppTest {
     @Test
     public void testException() throws Exception {
         String input = "There is no repeat here";
-        assertThrows("should throw exception", Exception.class, () -> classUnderTest.duplicateWord(input));
+        assertEquals("there is no repeated word",classUnderTest.duplicateWord(input));
     }
 }
