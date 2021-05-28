@@ -3,6 +3,9 @@
  */
 package leftJoin;
 
+import java.util.Arrays;
+import java.util.HashMap;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +13,21 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        LeftJoin leftJoin=new LeftJoin();
+              HashMap<String, String> synonymHash = new HashMap<>();
+              HashMap<String, String> antonymHash = new HashMap<>();
+
+        synonymHash.put("fond", "enamored");
+        synonymHash.put("wrath", "angered");
+        synonymHash.put("diligent", "employed");
+        synonymHash.put("outfit", "garb");
+        synonymHash.put("guide", "usher");
+
+        antonymHash.put("fond", "averse");
+        antonymHash.put("wrath", "delight");
+        antonymHash.put("diligent", "idle");
+        antonymHash.put("guide", "follow");
+        antonymHash.put("flow", "jam");
+        System.out.println(leftJoin.leftJoin(synonymHash,antonymHash));
     }
 }
