@@ -9,15 +9,16 @@ Write a function called tree_intersection that takes two binary tree parameters.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Created an array list to hold the equal values ;
-declare tow  new stack to save root value  ;
-loop in the tow Tree  ;
-check if root1 is not null 
-check if root2 is not null 
-check if the tow stack  is not empty
-check if root1 is equal root2
-check if root1 is not equal root2
-return Equal values  ArrayList  ; 
+ declare  a new ArrayList to save the set value  ;
+ declare  a new ArrayList to save the Duplicate value  ;
+
+loop in the first Tree  ;
+save all the value in the array List ;
+loop in the first Tree  ;
+check if the arrayList contain the value ;
+save the Duplicate vale in the secound ArrayList ;
+return Duplicate array ;
+
 
 - O(n) Time 
 - O(n^2) Space

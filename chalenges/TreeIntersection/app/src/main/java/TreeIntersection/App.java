@@ -11,27 +11,26 @@ public class App {
     public static void main(String[] args)
     {
         TreeIntersection treeOne=new TreeIntersection();
-        TreeIntersection.Node root1 = null;
-        root1 = treeOne.insert(root1, 5);
-        root1 = treeOne.insert(root1, 1);
-        root1 = treeOne.insert(root1, 10);
-        root1 = treeOne.insert(root1, 0);
-        root1 = treeOne.insert(root1, 4);
-        root1 = treeOne.insert(root1, 7);
-        root1 = treeOne.insert(root1, 9);
+        Node nodeOne=new Node(10);
+        Node nodeTow=new Node(15);
+        treeOne.addNode(nodeOne,6);
+        treeOne.addNode(nodeOne,15);
+        treeOne.addNode(nodeOne,8);
+        treeOne.addNode(nodeOne,7);
+        treeOne.addNode(nodeOne,4);
+        treeOne.addNode(nodeOne,2);
 
-        // Create second tree as shown in example
-        TreeIntersection.Node root2 = null;
-        root2 = treeOne.insert(root2, 10);
-        root2 = treeOne.insert(root2, 7);
-        root2 = treeOne.insert(root2, 20);
-        root2 = treeOne.insert(root2, 4);
-        root2 = treeOne.insert(root2, 9);
+        treeOne.addNode(nodeTow,6);
+        treeOne.addNode(nodeTow,5);
+        treeOne.addNode(nodeTow,56);
+        treeOne.addNode(nodeTow,9);
+        treeOne.addNode(nodeTow,8);
+        treeOne.addNode(nodeTow,15);
+        treeOne.addNode(nodeTow,2);
+        treeOne.addNode(nodeTow,1);
+        treeOne.addNode(nodeTow,30);
+        System.out.println(treeOne.treeIntersection(nodeOne,nodeTow));
 
-        treeOne.inorder(root1);
-        treeOne.inorder(root2);
-
-        System.out.println(treeOne.printCommon(root1, root2));
 
     }
 }
