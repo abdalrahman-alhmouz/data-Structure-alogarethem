@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leftJoin.iml" filepath="$PROJECT_DIR$/.idea/modules/leftJoin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/leftJoin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/leftJoin.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/leftJoin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/leftJoin.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/leftJoin.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/leftJoin.app.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chalenges.leftJoin.iml" filepath="$PROJECT_DIR$/.idea/modules/chalenges.leftJoin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.leftJoin.app.test.iml" />
+
     </modules>
   </component>
 </project>

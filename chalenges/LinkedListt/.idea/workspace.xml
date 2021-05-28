@@ -131,7 +131,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TreeIntersection" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hashtable" />
+>>>>>>> e9d64e03a793be46b15c77d9978ecb40cbbab7d4
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.kInMiddle">
     <configuration name="LibraryTest.kGreater" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
