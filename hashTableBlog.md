@@ -7,6 +7,19 @@ Implement a Hashtable with methods `add`, `get`, `contains`, and `hash`
 
 ## Approach & Efficiency
 A list of lists that each store nodes containing key value pairs.
+add method :
+Time Efficiency: O(1)
+Space Efficiency: O(1)
+
+size method 
+Time Efficiency: O(n)
+Space Efficiency: O(1)
+
+contain  method 
+Time Efficiency: O(n)
+Space Efficiency: O(1)
+
+getIndex method :
 Time Efficiency: O(1)
 Space Efficiency: O(1)
 

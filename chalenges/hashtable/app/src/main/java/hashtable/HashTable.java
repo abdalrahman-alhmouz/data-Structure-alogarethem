@@ -5,7 +5,6 @@ import java.util.List;
 
 public class HashTable {
     List<List<HashNode>> hash=new ArrayList<>();
-
     public void added(int key,int data) throws Exception {
         int index=getIndex(key);
         List<HashNode> hashTable=hash.get(index);
@@ -40,6 +39,23 @@ public class HashTable {
             return false;
 
         }
+    public String getValue(int key){
+        String getData="";
+        int index=getIndex(key);
+        List<HashNode> hashh=hash.get(index);
+        for ( HashNode bucket:hashh){
+            if (bucket.num==key){
+                getData+= bucket.data+" ";
+
+            }
+        }
+        if(getData==""){
+            return null;
+        }
+
+        return getData;
+
+    }
     public boolean contain(int key,int data){
         int index=getIndex(key);
         List<HashNode> hashh=hash.get(index);
