@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/linkedListt.iml" filepath="$PROJECT_DIR$/.idea/modules/linkedListt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linkedListt.lib.test.iml" />
+    </modules>
+  </component>
+</project>

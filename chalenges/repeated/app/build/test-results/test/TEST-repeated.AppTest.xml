@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repeated.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-28T02:58:02" hostname="DESKTOP-FCF8OFN" time="0.006">
+  <properties/>
+  <testcase name="testMultipleDuplicates" classname="repeated.AppTest" time="0.006"/>
+  <system-out><![CDATA[[it, was, the, best, of, times, it, was, the, worst, of, times]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
