@@ -5,34 +5,35 @@ import java.util.*;
 
 public class LeftJoin {
 
-    String[][] joinArray;
-
     public String[][] leftJoin(HashMap synonym, HashMap antonym) {
+        int i=0;
+String[][] strArray=new String[synonym.size()][3];
 
-        joinArray = new String[synonym.size()][];
-        List<String> keys = new ArrayList<>(synonym.keySet());
+        for (Object k : synonym.keySet())
+        {
 
-        for (int i = 0; i < synonym.size(); i++) {
-            joinArray[i] = new String[3];
-            joinArray[i][0] = keys.get(i);
-            joinArray[i][1] = synonym.get(keys.get(i)).toString();
-
-            if(antonym.containsKey(keys.get(i))){
-                joinArray[i][2] = antonym.get(keys.get(i)).toString();
+            if (!synonym.get(k).equals(antonym.get(k))) {
+                strArray[i][0]=(String) k;
+                strArray[i][1]=(String) synonym.get(k);
+                strArray[i][2]=(String) antonym.get(k);
+                i++;
+            }else{
+                strArray[i][0]=(String) k;
+                strArray[i][1]=(String) synonym.get(k);
+                i++;
             }
         }
-        return joinArray;
+return strArray;
     }
 
-
-    public String toString(){
+    public String toString(String[][] array){
 
         String string = "[";
 
-        for(int i = 0; i < joinArray.length; i++){
+        for(int i = 0; i < array.length; i++){
             string += "[";
-            for(int j = 0; j < joinArray[i].length; j++){
-                string += joinArray[i][j] + ", ";
+            for(int j = 0; j < array[i].length; j++){
+                string += array[i][j] + ", ";
             }
             string += "]";
         }
@@ -40,5 +41,6 @@ public class LeftJoin {
 
         return string;
     }
+
 
 }
