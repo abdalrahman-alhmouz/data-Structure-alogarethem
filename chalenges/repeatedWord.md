@@ -13,9 +13,9 @@ If the string is not null, we modified the string to lowercase and removed all c
 separate the words at the spaces. Used a Hashset to loop through the strings and return the
  first duplicate word. Throws exception if no repeated word exists in the string. 
 
-- O(n^2) Time 
+- O(n) Time 
 - O(n) Space
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Repeated-Word](assets/repeated-Word.PNG)
+![Repeated-Word](../assets/repeated-Word.PNG)
