@@ -46,11 +46,11 @@ public class AppTest {
     public void joinLeftTest(){
         LeftJoin leftJoin = new LeftJoin();
         String[][] results = leftJoin.leftJoin(synonymHash, antonymHash);
-        assertEquals("left join at 0 index", "[diligent, employed, idle]", Arrays.toString(results[0]));
-        assertEquals("left join at 1 index", "[outfit, garb, null]",Arrays.toString(results[1]));
-        assertEquals("left join at 2 index", "[wrath, angered, delight]",Arrays.toString(results[2]));
-        assertEquals("left join at 3 index", "[guide, usher, follow]",Arrays.toString(results[3]));
-        assertEquals("left join at 4 index", "[fond, enamored, averse]",Arrays.toString(results[4]));
+        assertEquals( "[diligent, employed, idle]", Arrays.toString(results[0]));
+        assertEquals( "[outfit, garb, null]",Arrays.toString(results[1]));
+        assertEquals( "[wrath, angered, delight]",Arrays.toString(results[2]));
+        assertEquals( "[guide, usher, follow]",Arrays.toString(results[3]));
+        assertEquals( "[fond, enamored, averse]",Arrays.toString(results[4]));
     }
 
     @Test
@@ -70,7 +70,7 @@ public class AppTest {
 
         LeftJoin leftJoin = new LeftJoin();
         String[][] results = leftJoin.leftJoin(smallerHash, biggerHash);
-        assertEquals( "[[diligent, employed, idle, ][wrath, angered, delight, ][fond, enamored, averse, ]]", leftJoin.toString());
+        assertEquals( "[[diligent, employed, idle, ][wrath, angered, delight, ][fond, enamored, averse, ]]", leftJoin.toString(results));
     }
 
     @Test
@@ -78,7 +78,7 @@ public class AppTest {
         HashMap<String, String> emptyHash = new HashMap<>();
         LeftJoin leftJoin = new LeftJoin();
         String[][] results = leftJoin.leftJoin(emptyHash, antonymHash);
-        assertEquals( "[]", leftJoin.toString());
+        assertEquals( "[]", leftJoin.toString(results));
 
     }
 }

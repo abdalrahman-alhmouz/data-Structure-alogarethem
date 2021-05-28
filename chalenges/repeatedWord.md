@@ -1,27 +1,30 @@
-# Repeated Word
+# Left Join
 <!-- Short summary or background information -->
-return array with equal values ;
-
+Write a function that LEFT JOINs two hashmaps into a single data structure.
 ## Challenge
 <!-- Description of the challenge -->
-Write a function called tree_intersection that takes two binary tree parameters.
- return a set of values found in both trees.
+- Write a function that LEFT JOINs two hashmaps into a single data structure.
+- The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+ - The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+- Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+- LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right ” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+- The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Created an array list to hold the equal values ;
-declare tow  new stack to save root value  ;
-loop in the tow Tree  ;
-check if root1 is not null 
-check if root2 is not null 
-check if the tow stack  is not empty
-check if root1 is equal root2
-check if root1 is not equal root2
-return Equal values  ArrayList  ; 
 
+define leftJoin method ;
+declare new towDimension array :
+loop into the hashMap 
+check if the synonym not equal antonym ;
+fill up the tow raw in the array ;
+
+else fill up the three raw in the array ;
+
+return the towDimension array ;
 - O(n) Time 
-- O(n^2) Space
+- O(n) Space
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Repeated-Word](../assets/code-chaleng32.PNG)
+![Repeated-Word](../assets/leftJoin.PNG)
