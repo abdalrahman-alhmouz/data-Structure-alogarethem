@@ -20,7 +20,8 @@ check if root1 is not equal root2
 return Equal values  ArrayList  ; 
 
 - O(n) Time 
-- O(n^2) Space
+- O(n) Space
+
 
 ## Solution
 <!-- Embedded whiteboard image -->
