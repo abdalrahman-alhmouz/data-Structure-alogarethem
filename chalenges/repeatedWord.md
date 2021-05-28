@@ -1,11 +1,11 @@
 # Repeated Word
 <!-- Short summary or background information -->
-return array with equal values ;
+return first duplicate word from a string
 
 ## Challenge
 <!-- Description of the challenge -->
-Write a function called tree_intersection that takes two binary tree parameters.
- return a set of values found in both trees.
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -20,9 +20,10 @@ save the Duplicate vale in the secound ArrayList ;
 return Duplicate array ;
 
 
+
 - O(n) Time 
-- O(n^2) Space
+- O(n) Space
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![Repeated-Word](../assets/code-chaleng32.PNG)
+![Repeated-Word](../assets/repeated-Word.PNG)
