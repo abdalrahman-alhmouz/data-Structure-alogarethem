@@ -11,8 +11,16 @@ Time Efficiency: O(1)
 Space Efficiency: O(1)
 
 ## API
-- add: takes in both the key and value. This method should hash the key, and add the key and value pair
- to the table, handling collisions as needed.
-- get: takes in the key and returns the value from the table.
-- contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
-- hash: takes in an arbitrary key and returns an index in the collection.
+
+ - define size method with int parameter ;
+ - add empty value in the list ;
+  - define getIndex method with int parameter ;
+ - find the index position ;
+ - define addNode method with key and value ;
+ - declare a new List contain List  Node ;
+ - loop through the list ;
+ - check if the value is exist in the index ;
+ - add node in the Index ;
+
+ ![HashTablee](./assets/HashTable.PNG)
+

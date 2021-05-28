@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chalenges.hashtable.iml" filepath="$PROJECT_DIR$/.idea/modules/chalenges.hashtable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/chalenges.hashtable.app.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashtable.iml" filepath="$PROJECT_DIR$/.idea/modules/hashtable.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hashtable.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hashtable.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/hashtable.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/hashtable.app.main.iml" />

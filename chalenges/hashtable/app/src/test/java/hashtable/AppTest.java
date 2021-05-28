@@ -7,8 +7,51 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void testAppHasAGreeting() throws Exception {
+        HashTable nnn =new HashTable();
+        nnn.Sizee(10);
+        nnn.added(10,20);
+        nnn.added(2,5);
+        nnn.added(1,270);
+        nnn.added(90,920);
+        nnn.added(150,720);
+        nnn.added(10,210);
+        nnn.added(2,55);
+        nnn.added(1,2750);
+
+
+        System.out.println(nnn.contain(120,7280));
+        assertTrue( nnn.containKey(1));
+        assertTrue( nnn.containKey(150));
+        assertTrue( nnn.containKey(90));
+
     }
+
+    @Test public void testTow() throws Exception {
+        HashTable nnn =new HashTable();
+        nnn.Sizee(7);
+        nnn.added(10,20);
+        nnn.added(2,5);
+        nnn.added(1,270);
+        nnn.added(90,920);
+        nnn.added(150,720);
+        nnn.added(10,210);
+
+        assertTrue( nnn.contain(90,920));
+        assertFalse( nnn.contain(90,20));
+    }
+
+    @Test public void testThree() throws Exception {
+        HashTable nnn =new HashTable();
+        nnn.Sizee(7);
+        nnn.added(10,20);
+        nnn.added(2,5);
+        nnn.added(1,270);
+        nnn.added(90,920);
+        nnn.added(150,720);
+        nnn.added(10,210);
+        assertEquals(3, nnn.getIndex(24));
+        assertFalse( nnn.contain(90,20));
+    }
+
 }
