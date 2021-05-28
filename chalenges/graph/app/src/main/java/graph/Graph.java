@@ -7,36 +7,37 @@ class Graph<T> {
     // We use Hashmap to store the edges in the graph
     private Map<T, List<T> > map = new HashMap<>();
 
+    List<Node> listNode=new ArrayList<>();
+    List<Edge> listEdgs=new ArrayList<>();
+
     // This function adds a new vertex to the graph
-    public void addVertex(T s)
+    public void addNode(T value)
     {
-        map.put(s, new LinkedList<T>());
+        Node node=new Node((int)value);
+        listNode.add(node);
+
+        //        map.put(s, new LinkedList<T>());
     }
 
     // This function adds the edge
     // between source to destination
-    public void addEdge(T source,
-                        T destination,
-                        boolean bidirectional)
-    {
+    public void addEdge(T source,T destination, int weigh) {
+        if (!listNode.contains(source))
+            addNode(source);
 
-        if (!map.containsKey(source))
-            addVertex(source);
+        if (!listNode.contains(destination))
+            addNode(destination);
 
-        if (!map.containsKey(destination))
-            addVertex(destination);
+//        Edge edge = new Edge((Node) source, (Node) destination, weigh);
+//        listEdgs.add(edge);
 
-        map.get(source).add(destination);
-        if (bidirectional == true) {
-            map.get(destination).add(source);
-        }
     }
 
     // This function gives the count of vertices
-    public void getVertexCount()
+    public void getNodeCount()
     {
         System.out.println("The graph has "
-                + map.keySet().size()
+                + listNode.size()
                 + " vertex");
     }
 
@@ -59,7 +60,7 @@ class Graph<T> {
     // a vertex is present or not.
     public void hasVertex(T s)
     {
-        if (map.containsKey(s)) {
+        if (listNode.contains(s)) {
             System.out.println("The graph contains "
                     + s + " as a vertex.");
         }
@@ -70,9 +71,11 @@ class Graph<T> {
     }
 
     // This function gives whether an edge is present or not.
-    public void hasEdge(T s, T d)
+    public void hasEdge(T s, T d,int weight)
     {
-        if (map.get(s).contains(d)) {
+        Edge edge = new Edge((Node) s, (Node) d, weight);
+
+        if (listEdgs.contains(edge)) {
             System.out.println("The graph has an edge between "
                     + s + " and " + d + ".");
         }
