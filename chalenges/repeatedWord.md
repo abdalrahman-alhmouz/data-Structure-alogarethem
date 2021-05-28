@@ -9,9 +9,17 @@ Without utilizing any of the built-in library methods available to your language
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-If the string is not null, we modified the string to lowercase and removed all comma's. Used regex to
-separate the words at the spaces. Used a Hashset to loop through the strings and return the
- first duplicate word. Throws exception if no repeated word exists in the string. 
+ declare  a new ArrayList to save the set value  ;
+ declare  a new ArrayList to save the Duplicate value  ;
+
+loop in the first Tree  ;
+save all the value in the array List ;
+loop in the first Tree  ;
+check if the arrayList contain the value ;
+save the Duplicate vale in the secound ArrayList ;
+return Duplicate array ;
+
+
 
 - O(n) Time 
 - O(n) Space
