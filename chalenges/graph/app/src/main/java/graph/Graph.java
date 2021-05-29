@@ -32,22 +32,11 @@ class Graph<T> {
 
     public String getNodeCount()
     {
-        return "The graph /has "
+        return "The graph has "
                 + listNode.size()
                 + " Node";
     }
 
-    public void hasVertex(Node s)
-    {
-        if (listNode.contains(s)) {
-            System.out.println("The graph contains "
-                    + s.value + " as a vertex.");
-        }
-        else {
-            System.out.println("The graph does not contain "
-                    + s.value + " as a vertex.");
-        }
-    }
 
     public boolean hasEdge(Node Left, Node right,int weight)
     {
