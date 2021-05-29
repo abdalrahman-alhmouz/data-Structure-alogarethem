@@ -10,4 +10,6 @@ public class Edge {
         this.right=right;
         this.weight=weight;
     }
+
+
 }

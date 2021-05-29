@@ -19,55 +19,27 @@ public class App {
         Node node5=new Node(5);
 
 
-        // edges are added.
-        // Since the graph is bidirectional,
-        // so boolean bidirectional is passed as true.
-        g.addNode(1);
-        g.addNode(2);
-        g.addNode(3);
-        g.addNode(4);
-        g.addNode(5);
 
-        g.addEdge(1, 2, 5);
-//        g.addEdge(0, 4, true);
-//        g.addEdge(1, 2, true);
-//        g.addEdge(1, 3, true);
-//        g.addEdge(1, 4, true);
-//        g.addEdge(2, 3, true);
-//        g.addEdge(3, 4, true);
+        g.addNode(node);
+        g.addNode(node2);
+        g.addNode(node3);
+        g.addNode(node4);
+        g.addNode(node5);
 
-        // print the graph.
-//        System.out.println("Graph:\n"
-//                + g.toString());
-//
-//        // gives the no of vertices in the graph.
-//        g.getVertexCount();
-//
-//        // gives the no of edges in the graph.
-//        g.getEdgesCount(true);
-//
-//        // tells whether the edge is present or not.
-//        g.hasEdge(3, 4);
-//
-//        // tells whether vertex is present or not
-//        g.hasVertex(5);
+        g.addEdge(node, node2, 1);
+        g.addEdge(node, node3, 2);
+        g.addEdge(node3, node2, 1);
+        g.addEdge(node3, node4, 2);
+//        g.getNodeCount();
+//        g.getEdgesCount(false);
+//        g.hasVertex(node3);
+//        g.GetNodes();
+        System.out.println(g.hasEdge(node, node4, 2));
+
+
+
     }
 
 
-    public static void sortArray(int[] arr){
-        int num=0;
-        for(int i=0;i<arr.length;i++){
-            for(int j=1+i;j<arr.length-1;j++){
-                if(arr[i]>arr[j]){
-                    num=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=num;
-                }
-            }
-        }
-        for(int i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
 
-        }
-    }
 }
