@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-graph/App.java
- graph.App
-=======
 graph/Node.java
  graph.Node
 graph/Edge.java
@@ -10,4 +6,3 @@ graph/App.java
  graph.App
 graph/Graph.java
  graph.Graph
->>>>>>> 3f995b5288d2c8383d8aca2e34682a8bf012935b
