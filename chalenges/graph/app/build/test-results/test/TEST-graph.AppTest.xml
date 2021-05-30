@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="graph.AppTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-05-29T13:47:48" hostname="DESKTOP-FCF8OFN" time="0.076">
+<testsuite name="graph.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-30T14:03:31" hostname="DESKTOP-FCF8OFN" time="0.004">
   <properties/>
-  <testcase name="testOne" classname="graph.AppTest" time="0.014"/>
-  <testcase name="testSix" classname="graph.AppTest" time="0.0"/>
-  <testcase name="testTow" classname="graph.AppTest" time="0.001"/>
-  <testcase name="testSeven" classname="graph.AppTest" time="0.001"/>
-  <testcase name="testThree" classname="graph.AppTest" time="0.021"/>
-  <testcase name="testFour" classname="graph.AppTest" time="0.037"/>
-  <testcase name="five" classname="graph.AppTest" time="0.0"/>
-  <testcase name="test8" classname="graph.AppTest" time="0.0"/>
+  <testcase name="test8" classname="graph.AppTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
