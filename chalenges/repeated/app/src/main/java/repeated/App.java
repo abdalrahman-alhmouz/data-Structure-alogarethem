@@ -3,6 +3,8 @@
  */
 package repeated;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class App {
@@ -11,28 +13,26 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println(duplicateWord("hello abd d  abd"));
-
+        System.out.println(duplicateWord(" helo how hello you maxn mazsn mana man man"));
 
     }
 
     public static String duplicateWord(String string) throws Exception {
 
         if (string != null) {
-
             String input = string.toLowerCase();
-
+            ArrayList<String> arrayString=new ArrayList<>();
             String[] strArray = input.replace(",", "").split(" ");
+            System.out.println(Arrays.toString(strArray));
+            for (int i=0;i<strArray.length;i++){
+                    if (arrayString.contains(strArray[i]))
+                        return strArray[i];
+                else
+                        arrayString.add(strArray[i]);
 
-            HashSet<String> repeatedWords = new HashSet<>();
-            for (String str : strArray) {
-                System.out.println(repeatedWords);
-                if (!repeatedWords.add(str))
-                return str;
             }
 
         }
-        throw new Exception("there is no repeated word");
-
+        return "there is no repeated word";
     }
 }
