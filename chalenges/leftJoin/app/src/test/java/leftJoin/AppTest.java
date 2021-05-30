@@ -6,6 +6,7 @@ package leftJoin;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Set;
@@ -14,49 +15,52 @@ import static org.junit.Assert.*;
 
 public class AppTest {
 
-    HashMap<String, String> synonymHash = new HashMap<>();
-    HashMap<String, String> antonymHash = new HashMap<>();
+    HashMap<String, String> tableOne = new HashMap<>();
+    HashMap<String, String> tableTow = new HashMap<>();
 
     @Before
     public void hashMapCreate(){
-        synonymHash.put("fond", "enamored");
-        synonymHash.put("wrath", "angered");
-        synonymHash.put("diligent", "employed");
-        synonymHash.put("outfit", "garb");
-        synonymHash.put("guide", "usher");
-        antonymHash.put("fond", "averse");
-        antonymHash.put("wrath", "delight");
-        antonymHash.put("diligent", "idle");
-        antonymHash.put("guide", "follow");
-        antonymHash.put("flow", "jam");
+        tableOne.put("fond", "enamored");
+        tableOne.put("wrath", "angered");
+        tableOne.put("diligent", "employed");
+        tableOne.put("outfit", "garb");
+        tableOne.put("guide", "usher");
+
+        tableTow.put("fond", "averse");
+        tableTow.put("wrath", "delight");
+        tableTow.put("diligent", "idle");
+        tableTow.put("guide", "follow");
+        tableTow.put("flow", "jam");
     }
 
     @Test
     public void hashMapTest(){
-        assertEquals( "{diligent=employed, outfit=garb, wrath=angered, guide=usher, fond=enamored}", synonymHash.toString());
+        assertEquals( "{diligent=employed, outfit=garb, wrath=angered, guide=usher, fond=enamored}", tableOne.toString());
     }
 
     @Test
     public void hashMapKeyTest(){
-        Set<String> synonymArrayList = synonymHash.keySet();
+        Set<String> synonymArrayList = tableOne.keySet();
         assertEquals( "[diligent, outfit, wrath, guide, fond]", synonymArrayList.toString());
     }
 
     @Test
     public void joinLeftTest(){
         LeftJoin leftJoin = new LeftJoin();
-        String[][] results = leftJoin.leftJoin(synonymHash, antonymHash);
-        assertEquals( "[diligent, employed, idle]", Arrays.toString(results[0]));
-        assertEquals( "[outfit, garb, null]",Arrays.toString(results[1]));
-        assertEquals( "[wrath, angered, delight]",Arrays.toString(results[2]));
-        assertEquals( "[guide, usher, follow]",Arrays.toString(results[3]));
-        assertEquals( "[fond, enamored, averse]",Arrays.toString(results[4]));
+        ArrayList<String[]> results = leftJoin.leftJoin(tableTow,tableOne);
+        assertEquals( "LeftJoin{array=diligent >employed >idle >}",leftJoin.toString(0));
+        assertEquals( "LeftJoin{array=outfit >garb >null >}",leftJoin.toString(1));
+        assertEquals( "LeftJoin{array=wrath >angered >delight >}",leftJoin.toString(2));
+        assertEquals( "LeftJoin{array=guide >usher >follow >}",leftJoin.toString(3));
+        assertEquals( "LeftJoin{array=fond >enamored >averse >}",leftJoin.toString(4));
     }
 
+    HashMap<String,String> smallerHash = new HashMap<>();
+    HashMap<String,String> biggerHash = new HashMap<>();
+
+
     @Test
-    public void hashNotSameSize(){
-        HashMap<String, String> smallerHash = new HashMap<>();
-        HashMap<String, String> biggerHash = new HashMap<>();
+    public void hashNotSameSize() {
 
         smallerHash.put("fond", "enamored");
         smallerHash.put("wrath", "angered");
@@ -67,18 +71,21 @@ public class AppTest {
         biggerHash.put("diligent", "idle");
         biggerHash.put("guide", "follow");
         biggerHash.put("flow", "jam");
-
         LeftJoin leftJoin = new LeftJoin();
-        String[][] results = leftJoin.leftJoin(smallerHash, biggerHash);
-        assertEquals( "[[diligent, employed, idle, ][wrath, angered, delight, ][fond, enamored, averse, ]]", leftJoin.toString(results));
+        ArrayList<String[]> results = leftJoin.leftJoin(smallerHash,biggerHash);
+        assertEquals("LeftJoin{array=diligent >idle >employed >}", leftJoin.toString(0));
+        assertEquals("LeftJoin{array=wrath >delight >angered >}", leftJoin.toString(1));
+        assertEquals("LeftJoin{array=guide >follow >null >}", leftJoin.toString(2));
+        assertEquals( "LeftJoin{array=flow >jam >null >}",leftJoin.toString(3));
+        assertEquals( "LeftJoin{array=fond >averse >enamored >}",leftJoin.toString(4));
     }
-
     @Test
     public void emptyTest(){
         HashMap<String, String> emptyHash = new HashMap<>();
+        HashMap<String, String> emptyHashTow = new HashMap<>();
         LeftJoin leftJoin = new LeftJoin();
-        String[][] results = leftJoin.leftJoin(emptyHash, antonymHash);
-        assertEquals( "[]", leftJoin.toString(results));
+        ArrayList results = leftJoin.leftJoin(emptyHash, emptyHashTow);
+        assertEquals( null, leftJoin.toString(0));
 
     }
 }
