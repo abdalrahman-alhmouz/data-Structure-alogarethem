@@ -10,34 +10,20 @@ public class App {
     }
 
     public static void main(String[] args) {
-        // Object of graph is created.
-        Graph<Integer> g = new Graph<Integer>();
-        Node node=new Node(1);
-        Node node2=new Node(2);
-        Node node3=new Node(3);
-        Node node4=new Node(4);
-        Node node5=new Node(5);
+      BreadthFirst graph=new BreadthFirst();
+        graph.addVertix(1);
+        graph.addVertix(2);
+        graph.addVertix(3);
+        graph.addVertix(4);
+        graph.addVertix(5);
 
-
-
-        g.addNode(node);
-        g.addNode(node2);
-        g.addNode(node3);
-        g.addNode(node4);
-        g.addNode(node5);
-
-        g.addEdge(node, node2, 1);
-        g.addEdge(node, node3, 2);
-        g.addEdge(node3, node2, 1);
-        g.addEdge(node3, node4, 2);
-//        g.getNodeCount();
-//        g.getEdgesCount(false);
-//        g.hasVertex(node3);
-//        g.GetNodes();
-        System.out.println(g.hasEdge(node, node4, 2));
-
-
-
+        graph.addEdge(0,1);
+        graph.addEdge(1,2);
+        graph.addEdge(0,3);
+        graph.addEdge(3,4);
+        graph.addEdge(4,5);
+        graph.addEdge(1,4);
+        graph.breadthFirst();
     }
 
 

@@ -7,8 +7,52 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void testOne() {
+        BreadthFirst graph=new BreadthFirst();
+        graph.addVertix(1);
+        graph.addVertix(2);
+        graph.addVertix(3);
+        graph.addVertix(4);
+        graph.addVertix(5);
+
+        graph.addEdge(0,1);
+        graph.addEdge(1,2);
+        graph.addEdge(0,3);
+        graph.addEdge(3,4);
+        graph.addEdge(4,5);
+        graph.addEdge(1,4);
+
+        assertEquals(1, graph.displayValue(0));
+        assertEquals(2, graph.displayValue(1));
+        assertEquals(3, graph.displayValue(2));
+
+        assertEquals(1, graph.getUnVisited(2));
+
+    }
+
+    @Test public void testTow() {
+        BreadthFirst graphTow=new BreadthFirst();
+        graphTow.addVertix(1);
+        graphTow.addVertix(2);
+        graphTow.addVertix(3);
+        graphTow.addVertix(4);
+        graphTow.addVertix(5);
+
+        graphTow.addEdge(0,1);
+        graphTow.addEdge(1,2);
+        graphTow.addEdge(0,3);
+        graphTow.addEdge(3,4);
+        graphTow.addEdge(4,5);
+        graphTow.addEdge(1,4);
+
+        assertEquals("[1, 2, 4, 3, 5]", graphTow.breadthFirst().toString());
+
+    }
+    @Test public void testThree() {
+        BreadthFirst graphTow=new BreadthFirst();
+
+
+        assertEquals("[]", graphTow.arrayBreadth.toString());
+
     }
 }
