@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94847-9c88-4972-89e1-be7f580521ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leftJoin/app/src/main/java/leftJoin/LeftJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leftJoin/app/src/main/java/leftJoin/LeftJoin.java" afterDir="false" />
-
-    </list>
+    <list default="true" id="61f94847-9c88-4972-89e1-be7f580521ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,8 +50,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leftJoin" />
-
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graph" />
   </component>
   <component name="RunManager" selected="Gradle.LibraryTest.kInMiddle">
     <configuration name="LibraryTest.kGreater" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
