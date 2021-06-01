@@ -8,5 +8,5 @@ Here you will find codeChaleng that I have done  to share what I learned with yo
 | chaleng |[arrayBinary](chalenges/arrayBinary/lib/src/main/java/arrayBinary)  |
 | chaleng |[stacksandqueues](chalenges/stacksandqueues/lib/src/main/java/stacksandqueues)  |
 | chaleng |[AnimalShelter](chalenges/utilities/lib/src/main/java/utilities)  |
-| chaleng |[Tree](chalenges/tree/lib/src/main/java/tree)  |
+| chaleeng |[Tree](chalenges/tree/lib/src/main/java/tree)  |
 
