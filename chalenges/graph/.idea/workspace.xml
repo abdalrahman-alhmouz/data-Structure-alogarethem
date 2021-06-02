@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5358436-f267-41e7-b418-65ae841cd029" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../LinkedListt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListt/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DepthFirst/app/src/main/java/DepthFirst/DepthFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +96,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../breadthFirst" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DepthFirst" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
