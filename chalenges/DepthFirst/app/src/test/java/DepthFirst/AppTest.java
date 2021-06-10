@@ -8,6 +8,8 @@ import static org.junit.Assert.*;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
+        App classUnderTest = new App();
+        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
         DepthFirst g = new DepthFirst(5);
         g.addEdge(0,1);
         g.addEdge(3,2);
