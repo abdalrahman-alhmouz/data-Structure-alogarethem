@@ -10,5 +10,28 @@ public class AppTest {
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+        DepthFirst g = new DepthFirst(5);
+        g.addEdge(0,1);
+        g.addEdge(3,2);
+        g.addEdge(2,4);
+        g.addEdge(1,4);
+        g.addEdge(3,1);
+        g.addEdge(2,0);
+        assertEquals("0 ->1 ->4 ->2 ->3 ->", g.dFS());
+    }
+    @Test public void testTow() {
+        DepthFirst graph = new DepthFirst(5);
+        graph.addEdge(0,1);
+        graph.addEdge(4,2);
+        graph.addEdge(4,3);
+        graph.addEdge(3,4);
+        graph.addEdge(2,1);
+        assertEquals("0 ->1 ->2 ->4 ->3 ->", graph.dFS());
+    }
+
+    @Test public void testThree() {
+        DepthFirst graph = new DepthFirst(0);
+        assertNull( graph.isEmpty());
+        assertNull( graph.dFS());
     }
 }
